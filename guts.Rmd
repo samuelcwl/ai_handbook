@@ -16,6 +16,24 @@ If you only have time to read a few articles and feel overwhelmed by all the res
 
 ### Intro to ML Resources
 
+#### Introductory Videos
+
+- [How Does Your Phone Know This Is A Dog?](https://www.youtube.com/watch?v=bHvf7Tagt18&feature=youtu.be)
+- [Behind the Mic: The Science of Talking with Computers](https://www.youtube.com/watch?v=yxxRAHVtafI&feature=youtu.be)
+
+#### Business & Product Management
+
+- [Machine Learning & AI: When to Start?](https://www.shellypalmer.com/2017/05/machine-learning-ai-start/)
+- [What Every Manager Should Know About Machine Learning](https://hbr.org/2015/07/what-every-manager-should-know-about-machine-learning)
+- [The Step-By-Step PM Guide to Building Machine Learning Based Products](https://medium.com/@yaelg/product-manager-pm-step-by-step-tutorial-building-machine-learning-products-ffa7817aa8ab)
+
+#### How Does It Work?
+
+- [a16z AI Playbook](http://aiplaybook.a16z.com) - “This microsite is intended to help newcomers (both non-technical and technical) begin exploring what's possible with AI”
+- [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+- [Machine Learning Is Fun!](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471) - great intro for folks with a slightly technical background
+- [Machine Learning For Humans](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12) - a technically-oriented intro
+
 ### AI + ML Blogs
 
 ### Interviews + Talks with AI Experts
@@ -25,6 +43,11 @@ If you only have time to read a few articles and feel overwhelmed by all the res
 ## Industries
 
 ### Energy
+
+- [Artificial Intelligence and the Future of Energy](https://medium.com/wepower/artificial-intelligence-and-the-future-of-energy-105ac6053de4)
+- [How Artificial Intelligence Will Revolutionize the Energy Industry](http://sitn.hms.harvard.edu/flash/2017/artificial-intelligence-will-revolutionize-energy-industry/)
+- [5 Ways the Energy Industry is Using Artificial Intelligence](https://www.cbinsights.com/research/artificial-intelligence-energy-industry/)
+- [This AI Just Mapped Every Solar Panel in the US](https://gizmodo.com/this-ai-just-mapped-every-solar-panel-in-the-united-sta-1831200756)
 
 ### Earth, Environment, and Climate Change
 
