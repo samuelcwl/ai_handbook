@@ -1,0 +1,33 @@
+# Introduction {#introduction}
+
+## What?
+
+What do people mean when they say “artificial intelligence”, “machine learning”, or even more confusingly, “deep learning”?  While these terms have become such buzzwords a layperson may use them interchangeably, there is a general consensus of how these concepts relate to each other.
+
+As its name suggests, artificial intelligence (AI) is the general term for imbuing machines with human-like intelligence.  AI itself can typically be broken down into two categories: general and applied.
+
+General AI describes machines that have similar intelligence as humans, and that can apply that intelligence to new tasks.  This is what you generally find in science-fiction books (i.e. Culture series) and movies (i.e. Terminator, Her).  Do we have general AI yet?  This is a philosophical question, because the definition of intelligence keeps moving.  As soon as a task we thought was only achievable with human-level intelligence (i.e. chess, Jeopardy, Go, Starcraft) is mastered by a computer (i.e. DeepBlue, Watson, AlphaGo, AlphaStar, respectively), we understand how the computer accomplished it through mathematical wizardry and tend to relegate the task to the growing bin of computable problems ^[For a phenomenal deep dive into what intelligence really entails, and how we therefore define our humanity, I highly recommend The Most Human Human by Brian Christian.].  However, we can definitely say that all AI today is optimized for a specific set of tasks.  For instance, you can’t ask AlphaGo to translate languages or Watson to play checkers.  Therefore, one can claim that all AI today is applied AI - that is, AI that can only solve its designated subset of tasks.
+
+Useful resources:
+
+- [There are two kinds of AI, and the difference is important](https://www.popsci.com/narrow-and-general-ai#page-6)
+
+Machine learning (ML) is a set of techniques for enabling a machine to learn certain tasks, and as such, ML is a subset of AI.  Many techniques can be utilized for ML, including logistic regression, support vector machines, Gaussian mixture models (we’ll get into these later).  Most of these techniques require engineers to identify what’s known as “features” to train the ML models - for example, square footage, number of beds, and ZIP codes could be features for an ML algorithm predicting home prices.
+
+The most recent exciting developments in ML derive from a particular subset called deep learning (DL).  Deep learning employs neural networks (also more on this later) to identify which features are most useful for the task at hand.  So now, our models can not only learn how to predict outcomes, but they can also learn how to get better at predicting outcomes.
+
+Useful resources:
+
+- [Clearing the Confusion: AI vs Machine Learning vs Deep Learning Differences](https://towardsdatascience.com/clearing-the-confusion-ai-vs-machine-learning-vs-deep-learning-differences-fce69b21d5eb)
+
+## Why?
+
+With the explosive growth of the internet and mobile devices, we are increasingly deluged by massive amounts of data.  [* insert some statistic about how many photos are taken per day, etc.]  Humans are not optimized to process so much data effectively, so in order to continue improving our quality of life, we could use a little help.  Think about the naval intelligence analyst manually sifting through satellite images to identify illegal fishing boats, or the backlog of chest radiography images waiting for qualified radiologists to diagnose.
+
+While there is concern about AI taking our jobs, which sparks a valid and important conversation, it’s also important to note that AI can complement humans.  For instance, automated tools can perform the initial filtering of customer service requests or medical screenings before handing the high-touch, high-impact decision-making off to a qualified human ^[As an example, this research uses well-known neural network architectures to simply screen chest radiography images for abnormalities.  Images classified as abnormal would be flagged for an expert to actually diagnose.  https://pubs.rsna.org/doi/10.1148/radiol.2018181422].
+
+## How?
+
+The laws of supply and demand are clearly in play when we look at the sky-high salaries commanded by well-trained AI practitioners, of which there are limited numbers ^[https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html].  As a result, only some organizations can afford to spin up their own AI or ML group.  For those who can, either through compensation or inspiration, here are some useful tips:
+
+- [End-to-End Guide for Machine Learning Projects](https://medium.com/fintechexplained/end-to-end-guide-for-machine-learning-project-146c288186dc)

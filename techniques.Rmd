@@ -1,0 +1,102 @@
+# Techniques {#techniques}
+
+## Overview
+
+Machine learning can be broadly bucketed into three categories:
+
+(1) Supervised Learning
+(2) Unsupervised Learning
+(3) Reinforcement Learning
+
+Supervised learning encompasses tasks that try to predict something, such as stock price, or whether a picture contains a dog or a cat.  To train a supervised ML model, you must define both input features and outputs, so we call this labeled data.
+
+Unsupervised learning aims to identify structure in unlabeled data, meaning you provide only input features.  Examples include clustering books by topic, identifying when a machine might be faulty due to odd behavior, etc.
+
+Reinforcement learning trains an agent to accomplish a complex goal by identifying the next best step to take.  Examples include playing PacMan or chess.
+
+In each of these categories, an engineer must specify an objective function to maximize or minimize, and define how to incorporate feedback from a correct or incorrect decision back into a model to adjust its parameters.
+
+## Supervised Learning
+
+Within supervised learning, there are typically two tasks we're interested in:
+
+(1) Regression - predicting a continous value, such as housing price
+(2) Classification
+
+Useful Resources
+
+- [Classification Versus Regression](https://medium.com/simple-ai/classification-versus-regression-intro-to-machine-learning-5-5566efd4cb83)
+
+### Regression
+
+#### Linear Regression
+
+#### ARIMA
+
+Useful Resources
+
+- [Introduction to Forecasting with ARIMA in R](https://www.datascience.com/blog/introduction-to-forecasting-with-arima-in-r-learn-data-science-tutorials)
+
+#### Prophet
+
+Useful Resources
+
+- [Prophet Quickstart](https://facebook.github.io/prophet/docs/quick_start.html#python-api)
+
+### Classification
+
+#### K-Nearest Neighbors (KNN)
+
+#### Logistic Regression
+
+#### Naive Bayes
+
+#### Support Vector Machines (SVM)
+
+#### Decision Trees
+
+Useful Resources
+
+- [Decision Trees - An Intuitive Introduction](https://medium.com/x8-the-ai-community/decision-trees-an-intuitive-introduction-86c2b39c1a6c)
+- [How to Visualize a Decision Tree from a Random Forest in Python using Scikit-Learn](https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c)
+
+#### Random Forests
+
+Useful Resources
+
+- [Machine Learning Crash Course: Part 5 - Decision Trees and Ensemble Models](https://ml.berkeley.edu/blog/2017/12/26/tutorial-5/)
+
+### Neural Networks
+
+#### Convolutional Neural Networks (CNN)
+
+![](img/convnet.jpg)
+
+Useful Resources
+
+- [Intro to Convolutional Neural Networks](http://cs231n.github.io/convolutional-networks/)
+- [Visualizing what ConvNets Learn](http://cs231n.github.io/understanding-cnn/)
+
+#### Recurrent Neural Networks (RNN)
+
+#### Long Short Term Memory (LSTM)
+
+Useful Resources
+
+- [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+
+## Unsupervised Learning
+
+### Clustering
+
+#### K-Means
+
+#### Gaussian Mixture Model
+
+### Neural Networks
+
+#### Autoencoders
+
+#### Generative Adversarial Networks
+
+## Reinforcement Learning

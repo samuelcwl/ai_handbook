@@ -1,0 +1,13 @@
+book_filename: "ai_handbook"
+language:
+  ui:
+    chapter_name: "Chapter "
+rmd_files: [
+  "index.Rmd",
+  "introduction.Rmd",
+  "guts.Rmd",
+  "techniques.Rmd",
+  "practical_concepts.Rmd",
+  "advanced_concepts.Rmd"]
+delete_merged_file: true
+output_dir: "docs"

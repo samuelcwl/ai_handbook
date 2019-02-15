@@ -1,0 +1,25 @@
+# Advanced Concepts {#advanced_concepts} 
+
+## Entropy and Cross-Entropy
+
+- [Demystifying Entropy](https://towardsdatascience.com/demystifying-entropy-f2c3221e2550)
+- [Demystifying Cross Entropy](https://towardsdatascience.com/demystifying-cross-entropy-e80e3ad54a8)
+
+## Word2Vec
+
+- [Word2Vec Tutorial- The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
+- [Word2Vec Tutorial Part 2 - Negative Sampling](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
+
+## Stationarity and Differencing in Time-Series
+
+- [Forecasting: Principles and Practice - Stationarity and Differencing](https://otexts.com/fpp2/stationarity.html)
+
+## Autocorrelation
+
+## Maximum Likelihood Estimation vs. Bayesian Estimation
+
+## Local-Interpretable-Model-Agnostic Explanations (LIME)
+
+## Generalized Additive Models (GAMs)
+
+## Attention

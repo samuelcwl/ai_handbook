@@ -1,0 +1,15 @@
+# Practical Concepts {#practical_concepts} 
+
+## Gradient Descent
+
+## Backpropagation
+
+- [CS 231N: Understanding Backpropagation](http://cs231n.github.io/optimization-2/)
+
+## Cross-Validation & Hyperparameter Tuning
+
+- [CS 231N: Validation Sets for Hyperparameter Tuning](http://cs231n.github.io/classification/#val)
+
+## Transfer Learning
+
+- [CS 231N: Transfer Learning](http://cs231n.github.io/transfer-learning/)
