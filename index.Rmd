@@ -1,6 +1,6 @@
 --- 
 title: "The AI Handbook"
-author: "Darren Hau"
+author: "Darren Hau, Andrew Milich, Zach Gleicher, and Jonathan Rosenberg"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 # output: bookdown::gitbook
