@@ -16,7 +16,16 @@
 
 ## Autocorrelation
 
+- [Autocorrelation and Partial Autocorrelation Functions](https://www.ibm.com/support/knowledgecenter/en/SS3RA7_15.0.0/com.ibm.spss.modeler.help/timeseries_acf_pacf.htm)
+- [What is the autocorrelation function?](https://stats.stackexchange.com/questions/77248/what-is-autocorrelation-function)
+- [Identifying the numbers of AR or MA terms in an ARIMA model](http://people.duke.edu/~rnau/411arim3.htm)
+- [Model Identification](https://www.itl.nist.gov/div898/handbook/pmc/section6/pmc622.htm)
+
 ## Maximum Likelihood Estimation vs. Bayesian Estimation
+
+- [Maximum Likelihood Estimation and Bayesian Estimation](https://www.youtube.com/watch?v=fjqd0gG-5OE&feature=youtu.be)
+- [What is the difference between Bayesian estimate and maximum likelihood estimate?](https://stats.stackexchange.com/questions/74082/what-is-the-difference-in-bayesian-estimate-and-maximum-likelihood-estimate)
+- [Explaining Maximum Likelihood, Maximum a Posteriori, and Bayesian Parameter Estimation](https://medium.com/@amatsukawa/maximum-likelihood-maximum-a-priori-and-bayesian-parameter-estimation-d99a23a0519f)
 
 ## Local-Interpretable-Model-Agnostic Explanations (LIME)
 
