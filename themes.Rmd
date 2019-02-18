@@ -1,0 +1,89 @@
+# Themes {#themes}
+
+## Jobs
+
+### Overview
+
+- [How to Make A.I. That’s Good for People (March 2018, NYT)](https://www.nytimes.com/2018/03/07/opinion/artificial-intelligence-human.html)
+- [Most Americans think artificial intelligence will destroy other people’s jobs, not theirs (March 2018, Verge)](https://www.theverge.com/2018/3/7/17089904/ai-job-loss-automation-survey-gallup)
+- [The Anxiety of AI Agency (February 2018, WIRED)](https://www.wired.com/story/the-anxiety-of-ai-agency/)
+- [How the Growth of E-Commerce Is Shifting Retail Jobs (July 2017, NYT)](https://www.nytimes.com/interactive/2017/07/06/business/ecommerce-retail-jobs.html?_r=0)
+    - Great data visualization
+- [Why Nerds and Nurses Are Taking Over the U.S. Economy (October 2017, Atlantic)](https://www.theatlantic.com/business/archive/2017/10/the-future-of-jobs-polarized-unequal-and-health-care/543915/)
+
+### Studies & Reports
+
+- [Is automation labor-displacing? Productivity growth, employment, and the labor share (March 2018, Brookings)](https://www.brookings.edu/bpea-articles/is-automation-labor-displacing-productivity-growth-employment-and-the-labor-share/)
+- [How to Reform Worker-Training and Adjustment Policies for an Era of Technological Change (Feb 2018, ITIF)](https://itif.org/publications/2018/02/20/technological-innovation-employment-and-workforce-adjustment-policies)
+
+### Programs & Initiatives
+
+- [Exclusive: Google pledges $50 million to help people land jobs (July 2017, USA Today)](https://www.usatoday.com/story/tech/2017/07/26/exclusive-google-pledges-50-million-help-people-land-jobs/511125001/)
+
+## China and AI
+
+- [China Now Has the Most Valuable AI Startup in the World (April 2018, Bloomberg)](https://www.bloomberg.com/news/articles/2018-04-09/sensetime-snags-alibaba-funding-at-a-record-3-billion-valuation)
+- [As China Marches Forward on A.I., the White House Is Silent (Feb 2018, NYT)](https://www.nytimes.com/2018/02/12/technology/china-trump-artificial-intelligence.html?hp&action=click&pgtype=Homepage&clickSource=story-heading&module=second-column-region&region=top-news&WT.nav=top-news)
+- [This Startup Is Luring Top Talent With $3 Million Pay Packages (Feb 2018, Bloomberg)](https://www.bloomberg.com/news/articles/2017-09-24/in-battle-for-talent-one-startup-founder-tries-unlimited-pay)
+
+## Nations Investing in AI
+
+## Artificial General Intelligence (AGI)
+
+- [DeepMind’s AI agents conquer human pros at StarCraft II (Jan 2019, Verge)](https://www.theverge.com/2019/1/24/18196135/google-deepmind-ai-starcraft-2-victory)
+- [How researchers are teaching AI to learn like a child (May 2018, Science)](http://www.sciencemag.org/news/2018/05/how-researchers-are-teaching-ai-learn-child)
+- [DeepMind researcher says AI agents should cooperate for social good (Feb 2018, TechWorld)](https://www.techworld.com/data/deepmind-researcher-says-ai-agents-should-cooperate-for-social-good-3672338/)
+
+## Ethics
+
+### General
+
+- [Establishing an AI code of ethics will be harder than people think (October 2018, MIT)](https://www.technologyreview.com/s/612318/establishing-an-ai-code-of-ethics-will-be-harder-than-people-think/)
+- [Facial recognition technology: The need for public regulation and corporate responsibility (July 2018, Microsoft)](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/?utm_campaign=Artificial%2BIntelligence%2BWeekly&utm_medium=email&utm_source=Artificial_Intelligence_Weekly_81)
+- [Why Do We Keep Blaming AI For Society's Ethical Concerns? (June 2018, Forbes)](https://www.forbes.com/sites/kalevleetaru/2018/06/17/why-do-we-keep-blaming-ai-for-societys-ethical-concerns/#6a29abe8214d)
+- [AI at Google: our principles (June 2018, Google)](https://blog.google/topics/ai/ai-principles/)
+- [A Hippocratic Oath for artificial intelligence practitioners (March 2018, TechCrunch)](https://techcrunch.com/2018/03/14/a-hippocratic-oath-for-artificial-intelligence-practitioners/)
+- [When an AI finally kills someone, who will be responsible? (March 2018, MIT)](https://www.technologyreview.com/s/610459/when-an-ai-finally-kills-someone-who-will-be-responsible/)
+- [Preparing for Malicious Uses of AI (Feb 2018, OpenAI)](https://blog.openai.com/preparing-for-malicious-uses-of-ai/)
+- [Tech’s Ethical ‘Dark Side’: Harvard, Stanford and Others Want to Address It (Feb 2018, NYT)](https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html)
+- [DeepMind's Mustafa Suleyman: In 2018, AI will gain a moral compass (Jan 2018, Wired)](http://www.wired.co.uk/article/mustafa-suleyman-deepmind-ai-morals-ethics)
+
+### AI Weapons
+
+### Black Box & Model Explainability
+
+- [For artificial intelligence to thrive, it must explain itself (Feb 2018, Economist)](https://www.economist.com/news/science-and-technology/21737018-if-it-cannot-who-will-trust-it-artificial-intelligence-thrive-it-must)
+- [AI Can’t Reason Why (May 2018, WSJ)](https://www.wsj.com/articles/ai-cant-reason-why-1526657442)
+- [After the Facebook scandal: The grand plan to hold AI to account (April 2018, New Scientist)](https://www.newscientist.com/article/mg23831730-600-after-the-facebook-scandal-the-grand-plan-to-hold-ai-to-account/)
+- [DeepMind boffins brain-damage AI to find out what makes it tick (March 2018, The Register)](https://www.theregister.co.uk/2018/03/23/deepmind/)
+- [Intelligent to a Fault: When AI Screws Up, You Might Still Be to Blame (March 2018, Scientific American)](https://www.scientificamerican.com/article/intelligent-to-a-fault-when-ai-screws-up-you-might-still-be-to-blame1/)
+
+#### Technical Examples
+
+- [The Building Blocks of Interpretability (March 2018, Distill)](https://distill.pub/2018/building-blocks/)
+
+### Model Bias
+
+- [The case for fairer algorithms (March 2018, DeepMind)](https://medium.com/@Ethics_Society/the-case-for-fairer-algorithms-c008a12126f8)
+- [Bias detectives: the researchers striving to make algorithms fair (June 2018, Nature)](https://www.nature.com/articles/d41586-018-05469-3)
+
+#### Facial Recognition
+
+- [Facial recognition is accurate if you’re a white guy (Feb 2018, NYTimes)](https://www.nytimes.com/2018/02/09/technology/facial-recognition-race-artificial-intelligence.html?mtrref=undefined&gwh=AE15729BE10B48DC6605BFCF0642FB13&gwt=pay)
+- [When AI Fails on Oprah, Serena Williams, and Michelle Obama, It’s Time to Face Truth (July 2018, Medium)](https://medium.com/@Joy.Buolamwini/when-ai-fails-on-oprah-serena-williams-and-michelle-obama-its-time-to-face-truth-bf7c2c8a4119)
+- [MIT Researcher: Artificial Intelligence Has a Race Problem, and We Need to Fix It (March 2018, Boston News)](https://www.bostonmagazine.com/news/2018/02/23/artificial-intelligence-race-dark-skin-bias/)
+
+### Fake News
+
+- [OpenAI unveils multitalented AI that writes, translates, and slanders (Feb 2019, Verge)](https://www.theverge.com/platform/amp/2019/2/14/18224704/ai-machine-learning-language-models-read-write-openai-gpt2)
+- [The US military is funding an effort to catch deepfakes and other AI trickery (April 2018, MIT)](https://www.technologyreview.com/s/611146/the-us-military-is-funding-an-effort-to-catch-deepfakes-and-other-ai-trickery/)
+- [Lawmakers worry about rise of fake video technology (Feb 2018, The Hill)](http://thehill.com/policy/technology/374320-lawmakers-worry-about-rise-of-fake-video-technology)
+
+## AI + ML Skepticism
+
+## AI + Neuroscience
+
+## Security
+
+- [Google Brain researchers demo method to hijack neural networks (July 2018, Venturebeat)](https://venturebeat.com/2018/07/02/google-brain-researchers-demo-method-to-hijack-neural-networks/)
+- [These stickers make computer vision software hallucinate things that aren’t there (Jan 2018, Verge)](https://www.theverge.com/2018/1/3/16844842/ai-computer-vision-trick-adversarial-patches-google)

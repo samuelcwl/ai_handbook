@@ -1,0 +1,27 @@
+# Industry Applications {#industry}
+
+## Energy
+
+- [Artificial Intelligence and the Future of Energy](https://medium.com/wepower/artificial-intelligence-and-the-future-of-energy-105ac6053de4)
+- [How Artificial Intelligence Will Revolutionize the Energy Industry](http://sitn.hms.harvard.edu/flash/2017/artificial-intelligence-will-revolutionize-energy-industry/)
+- [5 Ways the Energy Industry is Using Artificial Intelligence](https://www.cbinsights.com/research/artificial-intelligence-energy-industry/)
+- [This AI Just Mapped Every Solar Panel in the US](https://gizmodo.com/this-ai-just-mapped-every-solar-panel-in-the-united-sta-1831200756)
+
+## Earth, Environment, and Climate Change
+
+- [Harnessing Artificial Intelligence for the Earth](http://www3.weforum.org/docs/Harnessing_Artificial_Intelligence_for_the_Earth_report_2018.pdf)
+- [Global Fishing Watch tracks ocean poachers with the help of AI](https://venturebeat.com/2018/06/08/global-fishing-watch-tracks-ocean-poachers-with-the-help-of-ai/)
+- [AI is helping seismologists detect earthquakes they’d otherwise miss](https://www.theverge.com/2018/2/14/17011396/ai-earthquake-detection-oklahoma-neural-network)
+    - Thibaut Perol (a deep learning researcher from Harvard) is looking into the use of AI to amplify the sensitivity of the state’s seismographs. This paper^[http://advances.sciencemag.org/content/4/2/e1700578] published in the journal Science Advances shows how effective this technique is - capable of detecting 17 times more earthquakes than older methods in a fraction of the time.
+- [The fight against illegal deforestation with TensorFlow](https://blog.google/topics/machine-learning/fight-against-illegal-deforestation-tensorflow/)
+- [Facebook AI Researchers Detect Flood and Fire Damage from Satellite Imagery](https://venturebeat.com/2018/12/07/facebook-ai-researchers-detect-flood-and-fire-damage-from-satellite-imagery/)
+
+## Health
+
+## Law
+
+## Art
+
+## Transportation
+
+## Robotics

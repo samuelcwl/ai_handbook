@@ -1,0 +1,9 @@
+# Getting Up To Speed - Must Reads!{#guts_must_reads}
+
+If you only have time to read a few articles and feel overwhelmed by all the resources, here are a few gems we pulled out:
+
+- [The Great AI Awakening (Dec 2016, NYT)](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html?_r=0)
+- [What AI can and can’t do (yet) for your business (Jan 2018, Mckinsey)](https://www.mckinsey.com/business-functions/mckinsey-analytics/our-insights/what-ai-can-and-cant-do-yet-for-your-business)
+- [Notes From the AI Frontier: Modeling the Impact of AI on the World Economy (April 2018, McKinsey)](https://www.mckinsey.com/~/media/McKinsey/Featured%20Insights/Artificial%20Intelligence/Notes%20from%20the%20frontier%20Modeling%20the%20impact%20of%20AI%20on%20the%20world%20economy/MGI-Notes-from-the-AI-frontier-Modeling-the-impact-of-AI-on-the-world-economy-September-2018.ashx)
+- [Google 2017 Founders’ Letter](https://abc.xyz/investor/founders-letters/2017/index.html)
+- [Learn with Google AI](https://ai.google/education)

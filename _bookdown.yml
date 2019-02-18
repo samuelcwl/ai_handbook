@@ -5,7 +5,10 @@ language:
 rmd_files: [
   "index.Rmd",
   "introduction.Rmd",
-  "guts.Rmd",
+  "guts_must_reads.Rmd",
+  "general.Rmd",
+  "industry.Rmd",
+  "themes.Rmd",
   "techniques.Rmd",
   "practical_concepts.Rmd",
   "advanced_concepts.Rmd"]
