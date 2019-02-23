@@ -2,6 +2,26 @@
 
 ## Market Trends and Reports
 
+- [The State of AI in 2019 (The Verge, 2019)](https://www.theverge.com/2019/1/28/18197520/ai-artificial-intelligence-machine-learning-computational-science)
+- [State of AI (August 2018)](https://www.stateof.ai/)
+- [Ways to think about machine learning (June 2018, Benedict Evans Blog)](https://www.ben-evans.com/benedictevans/2018/06/22/ways-to-think-about-machine-learning-8nefy)
+- [The Global Innovation Sweepstakes (June 2018, Atlantic Council)](http://www.atlanticcouncil.org/images/publications/The-Global-Innovation-Sweepstakes.pdf)
+- [The WIRED Guide to Artificial Intelligence (Feb 2018, Wired)](https://www.wired.com/story/guide-artificial-intelligence/)
+- [The AI Revolution: The Road to Superintelligence (January 2015, Wait but Why?)](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html)
+- [The state of Artificial Intelligence - Recent advances, startups, the road ahead (November 2017, CB Insights)](https://drive.google.com/file/d/1sy8aOvQs5IyeRAptomfQcijHB2CjpCxS/view)
+- [Artificial Intelligence: The next digital frontier? (June 2017, McKinsey)](https://drive.google.com/file/d/0B9TPrZu6o5q-LVozMnBJS3VnOHc/view)
+- [Perspectives on Artificial Intelligence (Q3 2017, Digital Capital Advisors)](https://drive.google.com/file/d/0B9TPrZu6o5q-N0pMcjlaY0MxbzQ/view)
+- [Artificial Intelligence - AI, Machine Learning & Data Fuel The Future of Productivity (Nov 2017, Goldman Sachs)](https://drive.google.com/file/d/0B9TPrZu6o5q-RTdJdzFiVk80OFU/view)
+- [15 tech trends in autonomous cars, artificial intelligence, and machine learning for 2017 (December 2016, Venturebeat)](https://venturebeat.com/2018/02/19/sk-telecom-will-demo-5g-social-vr-self-driving-cars-and-hologram-ai-at-mwc-2018/)
+- [Machine Learning Industry Predictions: Expert Consensus (March 2017, TechEmergence)](https://www.techemergence.com/machine-learning-industry-predictions-expert-consensus/)
+- [The Current State of Machine Intelligence 3.0 (2016, Shivon Zilis)](http://www.shivonzilis.com/)
+- [The State of Machine Intelligence (2016, HBR)](https://hbr.org/resources/pdfs/hbr-articles/2016/11/the_state_of_machine_intelligence.pdf)
+- [Gartner's Top 10 Predictions For IT In 2018 And Beyond (October 2017, Forbes)](https://www.forbes.com/sites/louiscolumbus/2017/10/03/gartners-top-10-predictions-for-it-in-2018-and-beyond/#39b7b71b45bb)
+- [The Royal Society Machine Learning](https://royalsociety.org/topics-policy/projects/machine-learning/)
+- [Inside the Alexa Prize (Feb 2018, Wired)](https://www.wired.com/story/inside-amazon-alexa-prize/)
+- [Google's New AI Head Is So Smart He Doesn't Need AI (April 2018, Wired)](https://www.wired.com/story/googles-new-ai-head-is-so-smart-he-doesnt-need-ai/)
+- [How babies learn – and why robots can’t compete (April 2018, The Guardian)](https://www.theguardian.com/news/2018/apr/03/how-babies-learn-and-why-robots-cant-compete)
+
 ## Intro to ML Resources
 
 ### Introductory Videos
@@ -46,4 +66,14 @@
 
 ## Interviews + Talks with AI Experts
 
+- [Jeff Dean’s Lecture for YC AI (August 2017)](https://www.youtube.com/watch?v=HcStlHGpjN8&t=1223s)
+- [Making Computers Smarter with Google's AI chief John Giannandrea | Disrupt SF 2017 (September 2017)](https://www.youtube.com/watch?v=djkeV4gew4Q)
+- [Past, Present and Future of AI / Machine Learning (Google I/O '17) (May 2017)](https://www.youtube.com/watch?v=0ueamFGdOpA)
+- [Garry Kasparov: "Deep Thinking" | Talks at Google (June 2017)](https://www.youtube.com/watch?v=zhkTHkIZJEc)
+- [Mustafa Suleyman: How DeepMind vanquished Go (April 2017)](https://www.ft.com/deepmind?mhq5j=e3)
+
 ## Online Courses
+
+- [Andrew Ng’s Coursera course](https://www.coursera.org/learn/machine-learning)
+- [Geoff Hinton’s Coursera course](https://www.coursera.org/learn/neural-networks)
+- [DeepMind / Oxford Deep Learning course](http://github.com/oxford-cs-deepnlp-2017/lectures)
