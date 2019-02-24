@@ -31,3 +31,4 @@ While there is concern about AI taking our jobs, which sparks a valid and import
 The laws of supply and demand are clearly in play when we look at the sky-high salaries commanded by well-trained AI practitioners, of which there are limited numbers ^[https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html].  As a result, only some organizations can afford to spin up their own AI or ML group.  For those who can, either through compensation or inspiration, here are some useful tips:
 
 - [End-to-End Guide for Machine Learning Projects](https://medium.com/fintechexplained/end-to-end-guide-for-machine-learning-project-146c288186dc)
+- [Why are Machine Learning Projects so Hard to Manage?](https://medium.com/@l2k/why-are-machine-learning-projects-so-hard-to-manage-8e9b9cf49641)
