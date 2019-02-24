@@ -25,7 +25,7 @@
 <meta name="author" content="Darren Hau, Andrew Milich, Zach Gleicher, and Jonathan Rosenberg">
 
 
-<meta name="date" content="2019-02-18">
+<meta name="date" content="2019-02-24">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -93,7 +93,9 @@
 <li class="chapter" data-level="5" data-path="industry.html"><a href="industry.html"><i class="fa fa-check"></i><b>5</b> Industry Applications</a><ul>
 <li class="chapter" data-level="5.1" data-path="industry.html"><a href="industry.html#energy"><i class="fa fa-check"></i><b>5.1</b> Energy</a></li>
 <li class="chapter" data-level="5.2" data-path="industry.html"><a href="industry.html#earth-environment-and-climate-change"><i class="fa fa-check"></i><b>5.2</b> Earth, Environment, and Climate Change</a></li>
-<li class="chapter" data-level="5.3" data-path="industry.html"><a href="industry.html#health"><i class="fa fa-check"></i><b>5.3</b> Health</a></li>
+<li class="chapter" data-level="5.3" data-path="industry.html"><a href="industry.html#health"><i class="fa fa-check"></i><b>5.3</b> Health</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="industry.html"><a href="industry.html#research-papers"><i class="fa fa-check"></i><b>5.3.1</b> Research Papers</a></li>
+</ul></li>
 <li class="chapter" data-level="5.4" data-path="industry.html"><a href="industry.html#law"><i class="fa fa-check"></i><b>5.4</b> Law</a></li>
 <li class="chapter" data-level="5.5" data-path="industry.html"><a href="industry.html#art"><i class="fa fa-check"></i><b>5.5</b> Art</a></li>
 <li class="chapter" data-level="5.6" data-path="industry.html"><a href="industry.html#transportation"><i class="fa fa-check"></i><b>5.6</b> Transportation</a></li>
@@ -106,7 +108,14 @@
 <li class="chapter" data-level="6.1.3" data-path="themes.html"><a href="themes.html#programs-initiatives"><i class="fa fa-check"></i><b>6.1.3</b> Programs &amp; Initiatives</a></li>
 </ul></li>
 <li class="chapter" data-level="6.2" data-path="themes.html"><a href="themes.html#china-and-ai"><i class="fa fa-check"></i><b>6.2</b> China and AI</a></li>
-<li class="chapter" data-level="6.3" data-path="themes.html"><a href="themes.html#nations-investing-in-ai"><i class="fa fa-check"></i><b>6.3</b> Nations Investing in AI</a></li>
+<li class="chapter" data-level="6.3" data-path="themes.html"><a href="themes.html#nations-investing-in-ai"><i class="fa fa-check"></i><b>6.3</b> Nations Investing in AI</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="themes.html"><a href="themes.html#usa"><i class="fa fa-check"></i><b>6.3.1</b> USA</a></li>
+<li class="chapter" data-level="6.3.2" data-path="themes.html"><a href="themes.html#india"><i class="fa fa-check"></i><b>6.3.2</b> India</a></li>
+<li class="chapter" data-level="6.3.3" data-path="themes.html"><a href="themes.html#south-korea"><i class="fa fa-check"></i><b>6.3.3</b> South Korea</a></li>
+<li class="chapter" data-level="6.3.4" data-path="themes.html"><a href="themes.html#uk"><i class="fa fa-check"></i><b>6.3.4</b> UK</a></li>
+<li class="chapter" data-level="6.3.5" data-path="themes.html"><a href="themes.html#eu"><i class="fa fa-check"></i><b>6.3.5</b> EU</a></li>
+<li class="chapter" data-level="6.3.6" data-path="themes.html"><a href="themes.html#france"><i class="fa fa-check"></i><b>6.3.6</b> France</a></li>
+</ul></li>
 <li class="chapter" data-level="6.4" data-path="themes.html"><a href="themes.html#artificial-general-intelligence-agi"><i class="fa fa-check"></i><b>6.4</b> Artificial General Intelligence (AGI)</a></li>
 <li class="chapter" data-level="6.5" data-path="themes.html"><a href="themes.html#ethics"><i class="fa fa-check"></i><b>6.5</b> Ethics</a><ul>
 <li class="chapter" data-level="6.5.1" data-path="general.html"><a href="general.html#general"><i class="fa fa-check"></i><b>6.5.1</b> General</a></li>
@@ -280,6 +289,27 @@
 <h3><span class="header-section-number">7.3.1</span> Clustering</h3>
 <div id="k-means" class="section level4">
 <h4><span class="header-section-number">7.3.1.1</span> K-Means</h4>
+<div class="figure">
+<img src="img/kmeans.gif" />
+
+</div>
+<p>K-means clustering is one of the most common ways to identify groups in your data. You start with unlabeled data (i.e. online customer sales data) and want to identify what clusters they can be bucketed into (i.e. customer archetypes).</p>
+<p>How does it work? You define an objective function to minimize, initialize the number and location of cluster centroids (randomly or through a heuristic), and keep repeating the following steps until some criteria is met (i.e. 1000 iterations or objective function is sufficiently small):</p>
+<ol style="list-style-type: decimal">
+<li>Update the cluster assignments of each data point
+<ul>
+<li>Each data point is assigned to the cluster centroid that is closest</li>
+</ul></li>
+<li>Update the cluster centroids
+<ul>
+<li>Each cluster center is the average of the data points assigned to it</li>
+</ul></li>
+</ol>
+<p>Note that k-means clustering usually requires some manual investigation. The best way to start is to visualize your data and see if you can roughly identify groups. If you see three groups, then start by initializing three cluster centroids. If you can’t identify any groupings visually, then it’s a pretty good bet that whatever clustering the algorithm assigns isn’t going to be useful or interpretable.</p>
+<p>Useful Resources:</p>
+<ul>
+<li><a href="https://towardsdatascience.com/k-means-clustering-from-a-to-z-f6242a314e9a">K-Means Clustering: From A to Z (September 2018, Towards Data Science)</a></li>
+</ul>
 </div>
 <div id="gaussian-mixture-model" class="section level4">
 <h4><span class="header-section-number">7.3.1.2</span> Gaussian Mixture Model</h4>
@@ -289,6 +319,30 @@
 <h3><span class="header-section-number">7.3.2</span> Neural Networks</h3>
 <div id="autoencoders" class="section level4">
 <h4><span class="header-section-number">7.3.2.1</span> Autoencoders</h4>
+<div class="figure">
+<img src="img/autoencoder.png" />
+
+</div>
+<p>Autoencoders are neural networks that try to learn a latent representation of some input, which is a fancy way of saying it figures out the important features that capture the essence of the input. The purpose of building an autoencoder is typically:</p>
+<ul>
+<li>Dimensionality reduction or encoding data
+<ul>
+<li>Example: “Visualizing high-dimensional data is challenging. t-SNE is the most commonly used method but struggles with large number of dimensions (typically above 32). So autoencoders are used as a preprocessing step to reduce the dimensionality, and this compressed representation is used by t-SNE to visualize the data in 2D space.”<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+</ul></li>
+<li>Denoise data
+<ul>
+<li>Example: You have a grainy image but the random pixel values that cause the “graininess” is not useful for classifying what the image is. You can adjust how you use the autoencoder by feeding it the grainy image and having it try to predict the clean image.</li>
+</ul></li>
+</ul>
+<p>Autoencoders are comprised of two parts - an encoder neural network and a decoder neural network - and the inputs and outputs are the same. When the input is fed through the encoder, it is forced into a smaller, “lossy” representation due to the smaller number of neurons at the end of the encoder network. This compressed representation is then fed through the decoder, which tries to reconstruct the input. During the training process, the autoencoder therefore learns to approximate an identity function, and is forced to extract the most relevant features of the input.</p>
+<p>For the more technical folks, the function of an autoencoder is similar to principal component analysis (PCA).</p>
+<p>Useful Resources:</p>
+<ul>
+<li><a href="https://www.kaggle.com/shivamb/how-autoencoders-work-intro-and-usecases">How Autoencoders Work - Understanding the Math and Implementation (Kaggle)</a></li>
+<li><a href="https://towardsdatascience.com/deep-inside-autoencoders-7e41f319999f">Deep inside: Autoencoders (February 2018, Towards Data Science)</a></li>
+<li><a href="https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694">Autoencoders - Deep Learning Bits #1 (February 2017, Hacker Noon)</a></li>
+<li><a href="https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798">Applied Deep Learning - Part 3: Autoencoders (October 2017, Towards Data Science)</a></li>
+</ul>
 </div>
 <div id="generative-adversarial-networks" class="section level4">
 <h4><span class="header-section-number">7.3.2.2</span> Generative Adversarial Networks</h4>
@@ -299,6 +353,12 @@
 <h2><span class="header-section-number">7.4</span> Reinforcement Learning</h2>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><a href="https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798" class="uri">https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798</a><a href="techniques.html#fnref1">↩</a></p></li>
+</ol>
 </div>
 <script src="lib/js/jquery.min.js"></script>
 <script src="lib/js/bootstrap.min.js"></script>
