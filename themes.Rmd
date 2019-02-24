@@ -28,6 +28,34 @@
 
 ## Nations Investing in AI
 
+### USA
+
+- [Artificial Intelligence Is Now a Pentagon Priority. Will Silicon Valley Help? (NYT, August 2016)](https://www.nytimes.com/2018/08/26/technology/pentagon-artificial-intelligence.html)
+- [White House will host Amazon, Facebook, Ford and other major companies for summit on AI (May 2018, Washington Post)](https://www.washingtonpost.com/news/the-switch/wp/2018/05/08/white-house-will-host-amazon-facebook-ford-and-other-major-companies-for-summit-on-ai/?noredirect=on&utm_term=.611a7aea6ea6)
+
+### India
+
+- [India's National Strategy for AI Discussion (April 2018, NITI)](http://niti.gov.in/writereaddata/files/document_publication/NationalStrategy-for-AI-Discussion-Paper.pdf)
+
+### South Korea
+
+- [South Korea to invest 2.2 trillion won in bid to seize the lead in AI technology by 2022 (May 2018, OpenGov)](https://www.opengovasia.com/articles/south-korea-to-invest-2-2-trillion-won-in-bid-to-seize-the-lead-in-ai-technology-by-2022)
+
+### UK
+
+- [May to pledge millions to AI research assisting early cancer diagnosis (May 2018, Guardian)](https://www.theguardian.com/technology/2018/may/20/may-to-pledge-millions-to-ai-research-assisting-early-cancer-diagnosis)
+- [Tech sector backs British AI industry with multi million pound investment (April 2018, gov.uk)](https://www.gov.uk/government/news/tech-sector-backs-british-ai-industry-with-multi-million-pound-investment--2)
+- [Intelligent AI: why London is the global capital of machine learning (April 2018, Evening Standard)](https://www.standard.co.uk/tech/intelligent-ai-london-machine-learning-deep-mind-rohan-silva-a3825596.html)
+- [London’s mayor is assembling plans to make the city the next big AI hub (March 2018, Quartz)](https://qz.com/1234919/londons-mayor-took-a-major-step-in-gathering-ai-impact-evidence-to-form-new-policy/)
+
+### EU
+
+- [Artificial intelligence: €20bn investment call from EU commission (April 2018, Guardian)](https://www.theguardian.com/technology/2018/apr/25/european-commission-ai-artificial-intelligence)
+
+### France
+
+- [French government’s new AI strategy gets a boost from DeepMind, Samsung, and Fujitsu (March 2018, VentureBeat)](https://venturebeat.com/2018/03/29/french-governments-new-ai-strategy-gets-a-boost-from-deepmind-samsung-and-fujitsu/)
+
 ## Artificial General Intelligence (AGI)
 
 - [DeepMind’s AI agents conquer human pros at StarCraft II (Jan 2019, Verge)](https://www.theverge.com/2019/1/24/18196135/google-deepmind-ai-starcraft-2-victory)
@@ -49,6 +77,8 @@
 - [DeepMind's Mustafa Suleyman: In 2018, AI will gain a moral compass (Jan 2018, Wired)](http://www.wired.co.uk/article/mustafa-suleyman-deepmind-ai-morals-ethics)
 
 ### AI Weapons
+
+- [Attack on the killer robots (Feb 2018, Politico)](https://www.politico.eu/article/attack-killer-robots-autonomous-weapons-drones/)
 
 ### Black Box & Model Explainability
 
@@ -81,7 +111,14 @@
 
 ## AI + ML Skepticism
 
+- [No, Machine Learning is not just glorified Statistics (June 2018, Medium)](https://towardsdatascience.com/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3)
+- [Has artificial Intelligence become alchemy? (May 2018, Science)](https://drive.google.com/file/d/0B7Js-ioiI0O6WlU4VkZLSGhKc0xlamhxTDRCcTFNY25ESy1n/view?usp=sharing)
+- [Artificial Intelligence - The Revolution Hasn’t Happened Yet (April 2018, Medium)](https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7)
+- [Deep Reinforcement Learning Doesn't Work Yet (Feb 2018)](https://www.alexirpan.com/2018/02/14/rl-hard.html)
+
 ## AI + Neuroscience
+
+- [Google’s DeepMind is using neural nets to explore dopamine’s role in learning (May 2018, Venturebeat)](https://venturebeat.com/2018/05/14/googles-deepmind-is-using-neural-nets-to-explore-dopamines-role-in-learning/)
 
 ## Security
 
