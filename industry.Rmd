@@ -1,11 +1,9 @@
 # Industry Applications {#industry}
 
-## Energy
+## Art
 
-- [Artificial Intelligence and the Future of Energy (Nov 2017, Medium)](https://medium.com/wepower/artificial-intelligence-and-the-future-of-energy-105ac6053de4)
-- [How Artificial Intelligence Will Revolutionize the Energy Industry (August 2017, Harvard)](http://sitn.hms.harvard.edu/flash/2017/artificial-intelligence-will-revolutionize-energy-industry/)
-- [5 Ways the Energy Industry is Using Artificial Intelligence (March 2018, CB Insights)](https://www.cbinsights.com/research/artificial-intelligence-energy-industry/)
-- [This AI Just Mapped Every Solar Panel in the US (December 2018, Gizmodo)](https://gizmodo.com/this-ai-just-mapped-every-solar-panel-in-the-united-sta-1831200756)
+- [Is artificial intelligence set to become art’s next medium? (October 20018, Christies)](https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx)
+- [Google's AI scans and tags millions of 'Life' magazine photos (March 2018, Engadget)](https://www.engadget.com/2018/03/07/googles-ai-scans-and-tags-millions-of-life-magazine-photos/)
 
 ## Earth, Environment, and Climate Change
 
@@ -15,6 +13,14 @@
     - Thibaut Perol (a deep learning researcher from Harvard) is looking into the use of AI to amplify the sensitivity of the state’s seismographs. This paper^[http://advances.sciencemag.org/content/4/2/e1700578] published in the journal Science Advances shows how effective this technique is - capable of detecting 17 times more earthquakes than older methods in a fraction of the time.
 - [The fight against illegal deforestation with TensorFlow (April 2018, Google blog)](https://blog.google/topics/machine-learning/fight-against-illegal-deforestation-tensorflow/)
 - [Facebook AI Researchers Detect Flood and Fire Damage from Satellite Imagery (December 2018, VentureBeat)](https://venturebeat.com/2018/12/07/facebook-ai-researchers-detect-flood-and-fire-damage-from-satellite-imagery/)
+
+## Energy
+
+- [Artificial Intelligence and the Future of Energy (Nov 2017, Medium)](https://medium.com/wepower/artificial-intelligence-and-the-future-of-energy-105ac6053de4)
+- [How Artificial Intelligence Will Revolutionize the Energy Industry (August 2017, Harvard)](http://sitn.hms.harvard.edu/flash/2017/artificial-intelligence-will-revolutionize-energy-industry/)
+- [5 Ways the Energy Industry is Using Artificial Intelligence (March 2018, CB Insights)](https://www.cbinsights.com/research/artificial-intelligence-energy-industry/)
+- [This AI Just Mapped Every Solar Panel in the US (December 2018, Gizmodo)](https://gizmodo.com/this-ai-just-mapped-every-solar-panel-in-the-united-sta-1831200756)
+- [Google and DeepMind are using AI to predict the energy output of wind farms](https://www.theverge.com/2019/2/26/18241632/google-deepmind-wind-farm-ai-machine-learning-green-energy-efficiency)
 
 ## Health
 
@@ -48,15 +54,14 @@
 - [Artificial Intelligence Is Going To Supercharge Surveillance (Jan 2018, The Verge)](https://www.theverge.com/2018/1/23/16907238/artificial-intelligence-surveillance-cameras-security)
 - [Sent to Prison by a Software Program’s Secret Algorithms (May 2017, NYT)](https://www.nytimes.com/2017/05/01/us/politics/sent-to-prison-by-a-software-programs-secret-algorithms.html)
 
-## Art
+## Politics
 
-- [Is artificial intelligence set to become art’s next medium? (October 20018, Christies)](https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx)
-- [Google's AI scans and tags millions of 'Life' magazine photos (March 2018, Engadget)](https://www.engadget.com/2018/03/07/googles-ai-scans-and-tags-millions-of-life-magazine-photos/)
-
-## Transportation
-
-- [Learning to navigate in cities without a map (April 2018, DeepMind)](https://deepmind.com/blog/learning-to-navigate-cities-without-a-map/)
+- [Politics + AI](https://medium.com/politics-ai)
 
 ## Robotics
 
 - [This is how the robot uprising finally begins (July 2018, MIT Technology Review)](https://www.technologyreview.com/s/611424/this-is-how-the-robot-uprising-finally-begins/)
+
+## Transportation
+
+- [Learning to navigate in cities without a map (April 2018, DeepMind)](https://deepmind.com/blog/learning-to-navigate-cities-without-a-map/)

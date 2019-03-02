@@ -11,6 +11,8 @@ rmd_files: [
   "themes.Rmd",
   "techniques.Rmd",
   "practical_concepts.Rmd",
-  "advanced_concepts.Rmd"]
+  "advanced_concepts.Rmd",
+  "datasets.Rmd",
+  "tools_packages.Rmd"]
 delete_merged_file: true
 output_dir: "docs"

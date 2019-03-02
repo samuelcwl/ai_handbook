@@ -114,6 +114,16 @@ Useful Resources:
 
 #### Gaussian Mixture Model
 
+### Dimensionality Reduction
+
+#### PCA
+
+- [Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)](https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)
+
+#### t-SNE
+
+- [Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)](https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)
+
 ### Neural Networks
 
 #### Autoencoders
