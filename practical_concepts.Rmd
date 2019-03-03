@@ -2,6 +2,8 @@
 
 ## Gradient Descent
 
+- [Linear Regression using Gradient Descent (September 2018, Towards Data Science)](https://towardsdatascience.com/linear-regression-using-gradient-descent-97a6c8700931)
+
 ## Backpropagation
 
 - [CS 231N: Understanding Backpropagation](http://cs231n.github.io/optimization-2/)

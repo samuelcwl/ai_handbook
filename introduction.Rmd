@@ -16,6 +16,8 @@ Machine learning (ML) is a set of techniques for enabling a machine to learn cer
 
 The most recent exciting developments in ML derive from a particular subset called deep learning (DL).  Deep learning employs neural networks (also more on this later) to identify which features are most useful for the task at hand.  So now, our models can not only learn how to predict outcomes, but they can also learn how to get better at predicting outcomes.
 
+![](img/ai_ml_dl.png)
+
 Useful resources:
 
 - [Clearing the Confusion: AI vs Machine Learning vs Deep Learning Differences](https://towardsdatascience.com/clearing-the-confusion-ai-vs-machine-learning-vs-deep-learning-differences-fce69b21d5eb)

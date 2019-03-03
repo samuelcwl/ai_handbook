@@ -1,2 +1,17 @@
 # Tools & Packages {#tools_packages} 
 
+## Open-Source
+
+- [OpenML](https://www.openml.org)
+    - [Github page](https://github.com/openml/OpenML)
+    - An open-source collection of datasets and algorithms with APIs for various languages to integrate OpenML into your own tools.
+
+## Dataset Creation with Weak Supervision
+
+- [Snorkel: A System for Fast Training Data Creation](https://hazyresearch.github.io/snorkel/)
+    - "A system for rapidly creating training sets with weak supervision."
+
+## Cloud Computing
+
+- [AWS ParallelCluster](https://aws.amazon.com/blogs/opensource/aws-parallelcluster/)
+    - "An AWS supported, open source cluster management tool that makes it easy for scientists, researchers, and IT administrators to deploy and manage High Performance Computing (HPC) clusters in the AWS cloud."

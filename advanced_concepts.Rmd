@@ -36,3 +36,5 @@
 ## Weak Supervision
 
 ## Multitask Learning
+
+## Vanishing and Exploding Gradients
