@@ -1,14 +1,19 @@
 # Techniques {#techniques}
 
-## Overview
-
 Machine learning can be broadly bucketed into three categories:
 
 (1) Supervised Learning
 (2) Unsupervised Learning
 (3) Reinforcement Learning
 
-Supervised learning encompasses tasks that try to predict something, such as stock price, or whether a picture contains a dog or a cat.  To train a supervised ML model, you must define both input features and outputs, so we call this labeled data.
+Supervised learning encompasses tasks that try to predict something, such as stock price, or whether a picture contains a dog or a cat.  To train a supervised ML model, you must define both input features and outputs, which we call labeled data.  Within supervised learning, there are typically two tasks we're interested in:
+
+(1) Regression - predicting a continous value, such as housing price
+(2) Classification
+
+Useful Resources:
+
+- [Classification Versus Regression](https://medium.com/simple-ai/classification-versus-regression-intro-to-machine-learning-5-5566efd4cb83)
 
 Unsupervised learning aims to identify structure in unlabeled data, meaning you provide only input features.  Examples include clustering books by topic, identifying when a machine might be faulty due to odd behavior, etc.
 
@@ -16,22 +21,13 @@ Reinforcement learning trains an agent to accomplish a complex goal by identifyi
 
 In each of these categories, an engineer must specify an objective function to maximize or minimize, and define how to incorporate feedback from a correct or incorrect decision back into a model to adjust its parameters.
 
-## Supervised Learning
+## Regression (Supervised)
 
-Within supervised learning, there are typically two tasks we're interested in:
+### Linear Regression
 
-(1) Regression - predicting a continous value, such as housing price
-(2) Classification
+## Time-Series (Supervised)
 
-Useful Resources
-
-- [Classification Versus Regression](https://medium.com/simple-ai/classification-versus-regression-intro-to-machine-learning-5-5566efd4cb83)
-
-### Regression
-
-#### Linear Regression
-
-#### ARIMA
+### ARIMA
 
 Useful Resources
 
@@ -41,38 +37,38 @@ Useful Resources
 - [](https://otexts.org/fpp2/arima.html)
 - [Time Series Seasonal ARIMA Model In Python](http://www.seanabu.com/2016/03/22/time-series-seasonal-ARIMA-model-in-python/)
 
-#### Prophet
+### Prophet
 
 Useful Resources
 
 - [Prophet Quickstart](https://facebook.github.io/prophet/docs/quick_start.html#python-api)
 
-### Classification
+## Classification (Supervised)
 
-#### K-Nearest Neighbors (KNN)
+### K-Nearest Neighbors (KNN)
 
-#### Logistic Regression
+### Logistic Regression
 
-#### Naive Bayes
+### Naive Bayes
 
-#### Support Vector Machines (SVM)
+### Support Vector Machines (SVM)
 
-#### Decision Trees
+### Decision Trees
 
 Useful Resources
 
 - [Decision Trees - An Intuitive Introduction](https://medium.com/x8-the-ai-community/decision-trees-an-intuitive-introduction-86c2b39c1a6c)
 - [How to Visualize a Decision Tree from a Random Forest in Python using Scikit-Learn](https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c)
 
-#### Random Forests
+### Random Forests
 
 Useful Resources
 
 - [Machine Learning Crash Course: Part 5 - Decision Trees and Ensemble Models](https://ml.berkeley.edu/blog/2017/12/26/tutorial-5/)
 
-### Neural Networks
+## Neural Networks (Supervised)
 
-#### Convolutional Neural Networks (CNN)
+### Convolutional Neural Networks (CNN)
 
 ![](img/convnet.jpg)
 
@@ -81,7 +77,7 @@ Useful Resources
 - [Intro to Convolutional Neural Networks](http://cs231n.github.io/convolutional-networks/)
 - [Visualizing what ConvNets Learn](http://cs231n.github.io/understanding-cnn/)
 
-#### Recurrent Neural Networks (RNN)
+### Recurrent Neural Networks (RNN)
 
 ![](img/rnn.png)
 
@@ -95,7 +91,7 @@ Useful Resources:
 
 - [The Unreasonable Effectiveness of Recurrent Neural Networks (May 2015, Andrej Karpathy)](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 
-#### Long Short Term Memory (LSTM)
+### Long Short Term Memory (LSTM)
 
 ![](img/lstm.png)
 
@@ -121,11 +117,9 @@ Useful Resources:
 
 - [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
-## Unsupervised Learning
+## Clustering (Unsupervised)
 
-### Clustering
-
-#### K-Means
+### K-Means
 
 ![](img/kmeans.gif)
 
@@ -144,21 +138,21 @@ Useful Resources:
 
 - [K-Means Clustering: From A to Z (September 2018, Towards Data Science)](https://towardsdatascience.com/k-means-clustering-from-a-to-z-f6242a314e9a)
 
-#### Gaussian Mixture Model
+### Gaussian Mixture Model
 
-### Dimensionality Reduction
+## Dimensionality Reduction (Unsupervised)
 
-#### PCA
-
-- [Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)](https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)
-
-#### t-SNE
+### PCA
 
 - [Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)](https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)
 
-### Neural Networks
+### t-SNE
 
-#### Autoencoders
+- [Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)](https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)
+
+## Neural Networks (Unsupervised)
+
+### Autoencoders
 
 ![](img/autoencoder.png)
 
@@ -180,6 +174,6 @@ Useful Resources:
 - [Autoencoders - Deep Learning Bits #1 (February 2017, Hacker Noon)](https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694)
 - [Applied Deep Learning - Part 3: Autoencoders (October 2017, Towards Data Science)](https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798)
 
-#### Generative Adversarial Networks
+### Generative Adversarial Networks
 
-## Reinforcement Learning
+## ??? (Reinforcement Learning)
