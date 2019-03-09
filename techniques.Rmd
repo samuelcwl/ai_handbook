@@ -25,11 +25,25 @@ In each of these categories, an engineer must specify an objective function to m
 
 ### Linear Regression
 
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
+
 ## Time-Series (Supervised)
 
 ### ARIMA
 
-Useful Resources
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 - [Introduction to Forecasting with ARIMA in R](https://www.datascience.com/blog/introduction-to-forecasting-with-arima-in-r-learn-data-science-tutorials)
 - [Step By Step Graphic Guide to Forecasting Through ARIMA Modeling In R](http://ucanalytics.com/blogs/step-by-step-graphic-guide-to-forecasting-through-arima-modeling-in-r-manufacturing-case-study-example/)
@@ -39,7 +53,13 @@ Useful Resources
 
 ### Prophet
 
-Useful Resources
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 - [Prophet Quickstart](https://facebook.github.io/prophet/docs/quick_start.html#python-api)
 
@@ -47,22 +67,66 @@ Useful Resources
 
 ### K-Nearest Neighbors (KNN)
 
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
+
 ### Logistic Regression
+
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 ### Naive Bayes
 
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
+
 ### Support Vector Machines (SVM)
+
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 ### Decision Trees
 
-Useful Resources
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 - [Decision Trees - An Intuitive Introduction](https://medium.com/x8-the-ai-community/decision-trees-an-intuitive-introduction-86c2b39c1a6c)
 - [How to Visualize a Decision Tree from a Random Forest in Python using Scikit-Learn](https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c)
 
 ### Random Forests
 
-Useful Resources
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 - [Machine Learning Crash Course: Part 5 - Decision Trees and Ensemble Models](https://ml.berkeley.edu/blog/2017/12/26/tutorial-5/)
 
@@ -72,28 +136,39 @@ Useful Resources
 
 ![](img/convnet.jpg)
 
-Useful Resources
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 - [Intro to Convolutional Neural Networks](http://cs231n.github.io/convolutional-networks/)
 - [Visualizing what ConvNets Learn](http://cs231n.github.io/understanding-cnn/)
 
 ### Recurrent Neural Networks (RNN)
 
-![](img/rnn.png)
-
 When we process sequence data, like reading a paragraph or listening to music, we often rely on the context of what we've processed before to make decisions about the future.  A basic neural network doesn't accomplish this - it can only make decisions based on the current input.  Fortunately, recurrent neural networks (RNNs) come to the rescue!
+
+![](img/rnn.png)
 
 An RNN is a neural network that generates not only an output, but also a "hidden state" that feeds back into itself.  While this may seem complex, we can unroll this network in time to see how the hidden state feeds into the next timestep along with the next timestep's inputs.  This hidden state represents the context of previous inputs, so we aren't throwing away previous learnings!
 
 In each timestep, we therefore incorporate the previous timestep's context (or nothing at the start), along with the current input, to generate an output (i.e. the next word in a sentence translation).
 
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
 Useful Resources:
 
+- [Illustrated Guide to Recurrent Neural Networks (September 2018, Towards Data Science)](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)
 - [The Unreasonable Effectiveness of Recurrent Neural Networks (May 2015, Andrej Karpathy)](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 
 ### Long Short Term Memory (LSTM)
-
-![](img/lstm.png)
 
 One challenge with RNNs is that they have trouble retaining long-term information.  For instance, consider what Christopher Olah (colah) has to say:
 
@@ -102,6 +177,8 @@ One challenge with RNNs is that they have trouble retaining long-term informatio
 On the other hand, "consider trying to predict the last word in the text 'I grew up in France… I speak fluent French.' Recent information suggests that the next word is probably the name of a language, but if we want to narrow down which language, we need the context of France, from further back. It’s entirely possible for the gap between the relevant information and the point where it is needed to become very large."
 
 Due to a phenomenon known as the vanishing gradient problem (see Advanced Concepts section), an RNN's capability to learn from information from many timesteps ago quickly diminishes.  Fortunately, we have Long Short Term Memory networks (LSTMs) to the rescue!
+
+![](img/lstm.png)
 
 Here's the basic concept of an LSTM:
 
@@ -113,17 +190,24 @@ Here's the basic concept of an LSTM:
 
 The practical effect of these gates is that we can now ignore "useless" new information and keep its noise from overwhelming the actual signal from many timesteps ago.  LSTMs and its variants, such as the Gated Recurrent Unit (GRU) have proven themselves to be far superior to RNNs.
 
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
 Useful Resources:
 
 - [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+- [Illustrated Guide to LSTM’s and GRU’s: A step by step explanation (September 2018, Towards Data Science)](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
 
 ## Clustering (Unsupervised)
 
 ### K-Means
 
-![](img/kmeans.gif)
-
 K-means clustering is one of the most common ways to identify groups in your data.  You start with unlabeled data (i.e. online customer sales data) and want to identify what clusters they can be bucketed into (i.e. customer archetypes).
+
+![](img/kmeans.gif)
 
 How does it work?  You define an objective function to minimize, initialize the number and location of cluster centroids (randomly or through a heuristic), and keep repeating the following steps until some criteria is met (i.e. 1000 iterations or objective function is sufficiently small):
 
@@ -134,27 +218,55 @@ How does it work?  You define an objective function to minimize, initialize the 
 
 Note that k-means clustering usually requires some manual investigation.  The best way to start is to visualize your data and see if you can roughly identify groups.  If you see three groups, then start by initializing three cluster centroids.  If you can’t identify any groupings visually, then it’s a pretty good bet that whatever clustering the algorithm assigns isn’t going to be useful or interpretable.
 
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
 Useful Resources:
 
 - [K-Means Clustering: From A to Z (September 2018, Towards Data Science)](https://towardsdatascience.com/k-means-clustering-from-a-to-z-f6242a314e9a)
 
 ### Gaussian Mixture Model
 
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
+
 ## Dimensionality Reduction (Unsupervised)
 
 ### PCA
 
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
+
 - [Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)](https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)
 
 ### t-SNE
+
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 - [Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)](https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)
 
 ## Neural Networks (Unsupervised)
 
 ### Autoencoders
-
-![](img/autoencoder.png)
 
 Autoencoders are neural networks that try to learn a latent representation of some input, which is a fancy way of saying it figures out the important features that capture the essence of the input.  The purpose of building an autoencoder is typically:
 
@@ -163,9 +275,17 @@ Autoencoders are neural networks that try to learn a latent representation of so
 - Denoise data
     - Example: You have a grainy image but the random pixel values that cause the “graininess” is not useful for classifying what the image is.  You can adjust how you use the autoencoder by feeding it the grainy image and having it try to predict the clean image.
 
+![](img/autoencoder.png)
+
 Autoencoders are comprised of two parts - an encoder neural network and a decoder neural network - and the inputs and outputs are the same.  When the input is fed through the encoder, it is forced into a smaller, “lossy” representation due to the smaller number of neurons at the end of the encoder network.  This compressed representation is then fed through the decoder, which tries to reconstruct the input.  During the training process, the autoencoder therefore learns to approximate an identity function, and is forced to extract the most relevant features of the input.
 
 For the more technical folks, the function of an autoencoder is similar to principal component analysis (PCA).
+
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
 
 Useful Resources:
 
@@ -175,5 +295,13 @@ Useful Resources:
 - [Applied Deep Learning - Part 3: Autoencoders (October 2017, Towards Data Science)](https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798)
 
 ### Generative Adversarial Networks
+
+Summary:
+
+- Inputs:
+- Outputs:
+- Potential pitfalls:
+
+Useful Resources:
 
 ## ??? (Reinforcement Learning)
