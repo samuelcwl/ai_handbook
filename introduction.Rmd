@@ -30,7 +30,23 @@ While there is concern about AI taking our jobs, which sparks a valid and import
 
 ## How?
 
-The laws of supply and demand are clearly in play when we look at the sky-high salaries commanded by well-trained AI practitioners, of which there are limited numbers ^[https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html].  As a result, only some organizations can afford to spin up their own AI or ML group.  For those who can, either through compensation or inspiration, here are some useful tips:
+The laws of supply and demand are clearly in play when we look at the sky-high salaries commanded by well-trained AI practitioners, of which there are limited numbers ^[https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html].  As a result, only some organizations can afford to spin up their own research-oriented AI or ML group.  However, there are a growing number of resources to democratize these techniques:
+
+Product & Program Management
 
 - [End-to-End Guide for Machine Learning Projects](https://medium.com/fintechexplained/end-to-end-guide-for-machine-learning-project-146c288186dc)
 - [Why are Machine Learning Projects so Hard to Manage?](https://medium.com/@l2k/why-are-machine-learning-projects-so-hard-to-manage-8e9b9cf49641)
+
+Computer Vision
+
+- [Google Cloud Vision API](https://cloud.google.com/vision/)
+- [Azure Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/)
+- [Amazon Rekognition API](https://aws.amazon.com/rekognition/)
+
+Natural Language Processing
+
+- [Google Cloud Natural Language](https://cloud.google.com/natural-language/)
+
+A Variety of Other Providers
+
+- [Top 20 APIs You Should Know In AI and Machine Learning (March 2019, Towards Data Science)](https://towardsdatascience.com/top-20-apis-you-should-know-in-ai-and-machine-learning-8e08515198b3)
