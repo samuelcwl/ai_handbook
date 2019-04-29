@@ -25,7 +25,7 @@
 <meta name="author" content="Darren Hau, Andrew Milich, Zach Gleicher, and Jonathan Rosenberg">
 
 
-<meta name="date" content="2019-03-23">
+<meta name="date" content="2019-04-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -138,7 +138,7 @@
 <li class="chapter" data-level="7.2.2" data-path="techniques.html"><a href="techniques.html#prophet"><i class="fa fa-check"></i><b>7.2.2</b> Prophet</a></li>
 </ul></li>
 <li class="chapter" data-level="7.3" data-path="techniques.html"><a href="techniques.html#classification-supervised"><i class="fa fa-check"></i><b>7.3</b> Classification (Supervised)</a><ul>
-<li class="chapter" data-level="7.3.1" data-path="techniques.html"><a href="techniques.html#k-nearest-neighbors-knn"><i class="fa fa-check"></i><b>7.3.1</b> K-Nearest Neighbors (KNN)</a></li>
+<li class="chapter" data-level="7.3.1" data-path="techniques.html"><a href="techniques.html#k-nearest-neighbors-k-nn"><i class="fa fa-check"></i><b>7.3.1</b> k-Nearest Neighbors (k-NN)</a></li>
 <li class="chapter" data-level="7.3.2" data-path="techniques.html"><a href="techniques.html#logistic-regression"><i class="fa fa-check"></i><b>7.3.2</b> Logistic Regression</a></li>
 <li class="chapter" data-level="7.3.3" data-path="techniques.html"><a href="techniques.html#naive-bayes"><i class="fa fa-check"></i><b>7.3.3</b> Naive Bayes</a></li>
 <li class="chapter" data-level="7.3.4" data-path="techniques.html"><a href="techniques.html#support-vector-machines-svm"><i class="fa fa-check"></i><b>7.3.4</b> Support Vector Machines (SVM)</a></li>
@@ -278,15 +278,50 @@
 </div>
 <div id="classification-supervised" class="section level2">
 <h2><span class="header-section-number">7.3</span> Classification (Supervised)</h2>
-<div id="k-nearest-neighbors-knn" class="section level3">
-<h3><span class="header-section-number">7.3.1</span> K-Nearest Neighbors (KNN)</h3>
+<div id="k-nearest-neighbors-k-nn" class="section level3">
+<h3><span class="header-section-number">7.3.1</span> k-Nearest Neighbors (k-NN)</h3>
+<p>k-nearest neighbors (k-NN) is a simple algorithm that can be used for both classification and regression. The algorithm starts with a dataset where the label (either a class or property value) is known. For a new, unknown input object the user wishes to evaluate, the algorithm uses the k nearest neighbors of the existing dataset to determine the output value of the new object. k is a positive integer, and is typically small.</p>
+<ul>
+<li>Classification: The output value is the class determined by a plurality vote of the input object’s neighbors.</li>
+<li>Regression: The output value is the average of the values of k nearest neighbors.</li>
+</ul>
+<p>If k = 1, then the input object is simply assigned to the class or value of its single nearest neighbor.</p>
+<div class="figure">
+<img src="img/knn.png" />
+
+</div>
 <p>Summary:</p>
 <ul>
 <li>Inputs:</li>
 <li>Outputs:</li>
 <li>Potential pitfalls:</li>
+<li>Applying the correct distance metric
+<ul>
+<li>For continuous variables, Euclidean distance is typically used, though there exist other continuous distance metrics.</li>
+<li>For discrete variables (i.e. classification), the distance metric depends on the application. For instance, classification based on bag-of-words might use the overlap coefficient or Hamming distance.</li>
+</ul></li>
+<li>Skewed classes
+<ul>
+<li>The basic “majority voting” classification can perform poorly when the class distribution is skewed. Examples from the more frequent class will show up more often and overwhelm the less frequent class, biasing the prediction of the new example. One way to overcome this problem is to weight the classification, taking into account the distance from the test point to each of its k nearest neighbors. The class (or value, in regression problems) of each of the k nearest points is multiplied by a weight proportional to the inverse of the distance from that point to the test point.</li>
+</ul></li>
+<li>Choosing the right k
+<ul>
+<li>The best choice of k depends upon the data; generally, larger values of k reduces effect of the noise on the classification, but make boundaries between classes less distinct.</li>
+<li>A good k can be selected via hyperparameter optimization.</li>
+</ul></li>
+<li>Curse of dimensionality
+<ul>
+<li>For high-dimensional data (i.e., with number of dimensions more than 10), some metrics such as the Euclidean distance will be ineffective because all data points are almost equidistance to the input example datapoint. In this case, selecting relevant neighbors becomes difficult. To resolve this, dimension reduction is usually performed prior to applying the k-NN algorithm.</li>
+</ul></li>
+<li>Breaking ties
+<ul>
+<li>In binary (two class) classification problems, it is helpful to choose k to be an odd number as this avoids tied votes.</li>
+</ul></li>
 </ul>
 <p>Useful Resources:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">k-nearest neighbors algorithm (Wikipedia)</a></li>
+</ul>
 </div>
 <div id="logistic-regression" class="section level3">
 <h3><span class="header-section-number">7.3.2</span> Logistic Regression</h3>

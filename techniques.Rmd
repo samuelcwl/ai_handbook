@@ -65,15 +65,38 @@ Useful Resources:
 
 ## Classification (Supervised)
 
-### K-Nearest Neighbors (KNN)
+### k-Nearest Neighbors (k-NN)
+
+k-nearest neighbors (k-NN) is a simple algorithm that can be used for both classification and regression.  The algorithm starts with a dataset where the label (either a class or property value) is known.  For a new, unknown input object the user wishes to evaluate, the algorithm uses the k nearest neighbors of the existing dataset to determine the output value of the new object.  k is a positive integer, and is typically small.
+
+- Classification: The output value is the class determined by a plurality vote of the input object's neighbors.
+- Regression: The output value is the average of the values of k nearest neighbors.
+
+If k = 1, then the input object is simply assigned to the class or value of its single nearest neighbor.
+
+![](img/knn.png)
 
 Summary:
 
 - Inputs:
 - Outputs:
 - Potential pitfalls:
+  - Applying the correct distance metric
+    - For continuous variables, Euclidean distance is typically used, though there exist other continuous distance metrics.
+    - For discrete variables (i.e. classification), the distance metric depends on the application.  For instance, classification based on bag-of-words might use the overlap coefficient or Hamming distance.
+  - Skewed classes
+    - The basic "majority voting" classification can perform poorly when the class distribution is skewed. Examples from the more frequent class will show up more often and overwhelm the less frequent class, biasing the prediction of the new example.  One way to overcome this problem is to weight the classification, taking into account the distance from the test point to each of its k nearest neighbors. The class (or value, in regression problems) of each of the k nearest points is multiplied by a weight proportional to the inverse of the distance from that point to the test point.
+  - Choosing the right k
+    - The best choice of k depends upon the data; generally, larger values of k reduces effect of the noise on the classification, but make boundaries between classes less distinct.
+    - A good k can be selected via hyperparameter optimization.
+  - Curse of dimensionality
+    - For high-dimensional data (i.e., with number of dimensions more than 10), some metrics such as the Euclidean distance will be ineffective because all data points are almost equidistance to the input example datapoint.  In this case, selecting relevant neighbors becomes difficult.  To resolve this, dimension reduction is usually performed prior to applying the k-NN algorithm.
+  - Breaking ties
+    - In binary (two class) classification problems, it is helpful to choose k to be an odd number as this avoids tied votes.
 
 Useful Resources:
+
+- [k-nearest neighbors algorithm (Wikipedia)](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
 
 ### Logistic Regression
 
