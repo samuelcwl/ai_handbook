@@ -22,10 +22,10 @@
   <meta name="twitter:description" content="A handbook for technical and non-technical AI stakeholders." />
   
 
-<meta name="author" content="Darren Hau, Andrew Milich, Zach Gleicher, and Jonathan Rosenberg">
+<meta name="author" content="Darren Hau, Andrew Milich, Anna Mitchell, Raya Kuo, Samuel Ching, Zach Gleicher, and Jonathan Rosenberg">
 
 
-<meta name="date" content="2019-04-29">
+<meta name="date" content="2019-05-25">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -218,27 +218,51 @@
 <li>Unsupervised Learning</li>
 <li>Reinforcement Learning</li>
 </ol>
-<p>Supervised learning encompasses tasks that try to predict something, such as stock price, or whether a picture contains a dog or a cat. To train a supervised ML model, you must define both input features and outputs, which we call labeled data. Within supervised learning, there are typically two tasks we’re interested in:</p>
+<p>Supervised learning encompasses tasks that try to predict a value or category for some input data using ground-truth labeled examples. Within supervised learning, there are typically two tasks we’re interested in:</p>
 <ol style="list-style-type: decimal">
 <li>Regression - predicting a continous value, such as housing price</li>
 <li>Classification</li>
 </ol>
+<p>For example, a supervised learning model might predict stock price given past market data (regression), or determining whether a photograph contains a cat given labeled pictures of both cats and not-cats (classification). These labeled examples are called “training data.” In the cat example, the model determines which distinctive features most characterize “cat-ness” by examining the labeled examples, enabling it to classify new pictures as “cat” or “not-cat.”</p>
 <p>Useful Resources:</p>
 <ul>
 <li><a href="https://medium.com/simple-ai/classification-versus-regression-intro-to-machine-learning-5-5566efd4cb83">Classification Versus Regression</a></li>
 </ul>
-<p>Unsupervised learning aims to identify structure in unlabeled data, meaning you provide only input features. Examples include clustering books by topic, identifying when a machine might be faulty due to odd behavior, etc.</p>
+<p>Unsupervised learning doesn’t get any training data to learn from. Instead of training a model on labeled data, the model discovers structure in unlabeled data. Examples of unsupervised learning include clustering news articles based on similar topics, or identifying outliers in machine behavior to predict faults.</p>
 <p>Reinforcement learning trains an agent to accomplish a complex goal by identifying the next best step to take. Examples include playing PacMan or chess.</p>
-<p>In each of these categories, an engineer must specify an objective function to maximize or minimize, and define how to incorporate feedback from a correct or incorrect decision back into a model to adjust its parameters.</p>
+<p>In all of these categories, an engineer must specify an objective function, which is a measure of how well the model performs. The machine learning model then tries to minimize or maximize this objective function. For example, in the cat task, the engineer might define a loss function as the percentage of incorrectly classified images; the model would then try to minimize this loss. The engineer must specify how to incorporate feedback from a correct or incorrect decision back into the model so that it can adjust its parameters and improve performance on the objective function.</p>
 <div id="regression-supervised" class="section level2">
 <h2><span class="header-section-number">7.1</span> Regression (Supervised)</h2>
 <div id="linear-regression" class="section level3">
 <h3><span class="header-section-number">7.1.1</span> Linear Regression</h3>
+<p>Linear regression uses a line to approximate the relationship between an independent variable and a dependent variable. The learning task is to find the correct line, given many labeled training examples (points on the graph).</p>
+<div class="figure">
+<img src="img/linear_regression_1.png" />
+
+</div>
+<p>A rudimentary example is predicting a house’s price from its square footage (in practice, models use many more input features; for interpretability we simplify to a single input feature). To train the model, you would feed it training examples labeled with ground truth: e.g. house 1 has 1,500 square feet and sold for $200,000; and house 2 has 3,000 square feet and sold for $500,000. The model’s goal is to learn a pattern from these square footage-housing price pairs. Then in the future, when given only a square footage, it can predict the price accurately.</p>
+<p>The pattern linear regression models learn is a simple line (with more features, this line is multi-dimensional). After the model outputs a line, prediction is easy. To predict a price from any given square footage, find the square footage on the x-axis, move upward to see the y-value of the line at this point, and output this as the predicted price. The diagram below shows this process. Gray points are the training examples; the red line was found by the model to fit these training examples most closely.</p>
+<div class="figure">
+<img src="img/linear_regression_2.png" />
+
+</div>
+<p>More concretely, the model tries to find a line in the form <code>y = Wx + b</code> (where <code>W</code> is the slope and <code>b</code> is the y-intercept) to fit its training data most tightly. Several methods exist for finding this <code>W</code> and <code>b</code>. Least-squares is a popular method, but other options, like ridge regression, are also available.</p>
 <p>Summary:</p>
 <ul>
-<li>Inputs:</li>
-<li>Outputs:</li>
-<li>Potential pitfalls:</li>
+<li>Inputs:
+<ul>
+<li>Labeled training examples</li>
+<li>Unlabeled test examples for which a label must be predicted</li>
+</ul></li>
+<li>Outputs:
+<ul>
+<li>Labels for all of the previously unlabeled vectors</li>
+</ul></li>
+<li>Potential pitfalls:
+<ul>
+<li>Overfitting the dataset (high variance). Finding a line that is too specific to the training examples and doesn’t generalize well to the new examples.</li>
+<li>Not flexible enough for more complex datasets (high bias). Maybe the relationship between square footage and housing price isn’t linear! In that case, linear regression would not be the best choice; k-nearest-neighbors or some other approach that allows more complex decision boundaries would be better-suited.</li>
+</ul></li>
 </ul>
 <p>Useful Resources:</p>
 </div>
@@ -280,21 +304,35 @@
 <h2><span class="header-section-number">7.3</span> Classification (Supervised)</h2>
 <div id="k-nearest-neighbors-k-nn" class="section level3">
 <h3><span class="header-section-number">7.3.1</span> k-Nearest Neighbors (k-NN)</h3>
-<p>k-nearest neighbors (k-NN) is a simple algorithm that can be used for both classification and regression. The algorithm starts with a dataset where the label (either a class or property value) is known. For a new, unknown input object the user wishes to evaluate, the algorithm uses the k nearest neighbors of the existing dataset to determine the output value of the new object. k is a positive integer, and is typically small.</p>
+<p>K-nearest neighbors (k-NN) is a simple algorithm that can be used for both classification and regression. The crucial idea in k-NN is that, given an input with an unknown label, the model looks at the known examples that are most similar to the previously-unseen example, calculated through some distance metric. It then uses the labels of these k nearest neighbors to output a prediction for the new example. k is a positive integer, and is typically small.</p>
 <ul>
-<li>Classification: The output value is the class determined by a plurality vote of the input object’s neighbors.</li>
-<li>Regression: The output value is the average of the values of k nearest neighbors.</li>
+<li>Classification: The output value is the class determined by a plurality vote of the input object’s neighbors.
+<ul>
+<li>In the tumor example, where we are trying to determine whether a tumor is benign or malignant, the model finds the k tumors that look most similar to this one, and output the label held by a plurality of neighbors.</li>
+</ul></li>
+<li>Regression: The output value is the average of the values of k nearest neighbors.
+<ul>
+<li>In the housing price example, we find the k nearest neighbors - probably the k houses that have the closest square footage, and output the average of their prices.</li>
+</ul></li>
 </ul>
-<p>If k = 1, then the input object is simply assigned to the class or value of its single nearest neighbor.</p>
+<p>If <code>k = 1</code>, then the input object is simply assigned to the class or value of its single nearest neighbor.</p>
 <div class="figure">
 <img src="img/knn.png" />
 
 </div>
 <p>Summary:</p>
 <ul>
-<li>Inputs:</li>
-<li>Outputs:</li>
-<li>Potential pitfalls:</li>
+<li>Inputs:
+<ul>
+<li>A data set of labeled vectors (with possibly multiple features) for training.</li>
+<li>A set of unlabeled vectors that need to be classified.</li>
+</ul></li>
+<li>Outputs:
+<ul>
+<li>Labels for each of the unlabeled vectors.</li>
+</ul></li>
+<li>Potential pitfalls:
+<ul>
 <li>Applying the correct distance metric
 <ul>
 <li>For continuous variables, Euclidean distance is typically used, though there exist other continuous distance metrics.</li>
@@ -311,11 +349,12 @@
 </ul></li>
 <li>Curse of dimensionality
 <ul>
-<li>For high-dimensional data (i.e., with number of dimensions more than 10), some metrics such as the Euclidean distance will be ineffective because all data points are almost equidistance to the input example datapoint. In this case, selecting relevant neighbors becomes difficult. To resolve this, dimension reduction is usually performed prior to applying the k-NN algorithm.</li>
+<li>For high-dimensional data (i.e., with number of dimensions more than 10), some metrics such as the Euclidean distance will be ineffective because all data points are almost equidistant to the input example datapoint. In this case, selecting relevant neighbors becomes difficult. To resolve this, dimension reduction is usually performed prior to applying the k-NN algorithm.</li>
 </ul></li>
 <li>Breaking ties
 <ul>
 <li>In binary (two class) classification problems, it is helpful to choose k to be an odd number as this avoids tied votes.</li>
+</ul></li>
 </ul></li>
 </ul>
 <p>Useful Resources:</p>
@@ -325,26 +364,74 @@
 </div>
 <div id="logistic-regression" class="section level3">
 <h3><span class="header-section-number">7.3.2</span> Logistic Regression</h3>
+<p>Logistic regression is similar to linear regression in assuming a linear relationship between the dependent and independent variables. However, its name is misleading because unlike linear regression, it is used for classification.</p>
+<p>The model outputs a probability that a training example belongs to each category. For example, it will calculate the probability that a tumor is benign or malignant. To compute this probability, logistic regression first computes the same linear function <code>Wx + b</code> on the input <code>x</code>, then feeds the result into a sigmoid function, which maps to outputs between 0 and 1, inclusive. This final output can then be interpreted as a probability. (Logistic regression can also be generalized to consider more than two categories. See sidenote.)</p>
+<p>The last step is to decide on the cutoff, or “decision boundary,” to classify the example. For example, we might say that if the probability of an tumor being malignant is greater than 0.7, it should be classified as malignant. This parameter can be tuned and can also be a function rather than a numerical threshold.</p>
+<p>Sidenote: Logistic regression can also be generalized to consider more than two categories. One way of doing this is to first train a 2-category model of Category A vs Non-Category A, then another model for Category B vs Not Category A or B, then another model for Category C vs Not A or B or C, and so on. To classify a vector, run through the models in sequence.</p>
 <p>Summary:</p>
 <ul>
-<li>Inputs:</li>
-<li>Outputs:</li>
-<li>Potential pitfalls:</li>
+<li>Inputs:
+<ul>
+<li>A set of labeled vectors each belonging to a discrete category for training.</li>
+<li>A set of unlabeled vectors that need to be classified.</li>
+</ul></li>
+<li>Outputs:
+<ul>
+<li>Classifications for each of the unlabeled vectors.</li>
+</ul></li>
+<li>Potential pitfalls:
+<ul>
+<li>If the training data is linearly separable (there is a line that can be drawn to completely separate the two categories), then the training data needs to be regularized. Otherwise, the weights of the model go to infinity.</li>
+</ul></li>
 </ul>
 <p>Useful Resources:</p>
 </div>
 <div id="naive-bayes" class="section level3">
 <h3><span class="header-section-number">7.3.3</span> Naive Bayes</h3>
+<p>Naive Bayes is a classification technique that relies on Bayes’ Theorem. Bayes’ Theorem is a fundamental statistical theorem that calculates the probability of an event happening based on existing evidence of conditions related to an event.</p>
+<p><span class="math display">\[P(A|B) = \frac{P(B|A)P(A)}{P(B)}\]</span></p>
+<p>Bayes’ Theorem essentially means that the probability of seeing event <code>A</code> if you’ve already seen related event <code>B</code> is equivalent to the probability of seeing event <code>B</code> if you’ve already seen related event <code>A</code>.</p>
+<p><span class="math display">\[P(A|B)P(B) = P(B|A)P(A)\]</span></p>
+<p>Assuming that the features in a vector are independent, we can use Bayes’ Theorem to create a naive Bayes model such that</p>
+<p><span class="math display">\[P(y|x_1, x_2, … x_n) = P(y) \times P(x_1|y) \times P(x_2|y) \times ... \times P(x_n|y) = P(y) \prod_{i=1}^{n}P(x_n|y)\]</span></p>
+<p>where <span class="math inline">\(y\)</span> is the class of the vector, and <span class="math inline">\(x_1\)</span> to <span class="math inline">\(x_n\)</span> are features of the vector.</p>
+<p>Typically, because <span class="math inline">\(P(x_n|y)\)</span> is not known ahead of time, a training set of vectors is used for parameter estimations. Once the prior probability of all classes <span class="math inline">\(y\)</span> and <span class="math inline">\(P(x_n|y)\)</span> for each feature and class pair are known, then unknown test data is categorized into the most likely category.</p>
+<p>An example of a task for Naive Bayes could be digit recognition based on handwriting in a 9-grid square. The features would then be whether each of the 9 pixels are on or off, and the categories would be the 10 possible digits. One could train the model using a set of known, labeled written digits, then predict future written digits.</p>
 <p>Summary:</p>
 <ul>
-<li>Inputs:</li>
-<li>Outputs:</li>
-<li>Potential pitfalls:</li>
+<li>Inputs:
+<ul>
+<li><span class="math inline">\(P(y)\)</span>, <span class="math inline">\(P(x_n|y)\)</span> for each feature <span class="math inline">\(x_n\)</span> and category <span class="math inline">\(y\)</span>. If not known, estimate these values using labeled training vectors.</li>
+<li>A set of unlabeled test vectors.</li>
+</ul></li>
+<li>Outputs:
+<ul>
+<li>Categories for each of the unlabeled test vectors.</li>
+</ul></li>
+<li>Potential pitfalls:
+<ul>
+<li>Naive Bayes assumes independence between each of the vectors in the feature. Independence is hard to prove in the real world, and it’s difficult to have a set of features that are all independent.</li>
+<li>To make the model more generalizable, smoothing is often applied, and domain expertise is used in generating <span class="math inline">\(P(x_n|y)\)</span>, also called parameter estimation.</li>
+</ul></li>
 </ul>
 <p>Useful Resources:</p>
+<ul>
+<li><a href="https://inst.eecs.berkeley.edu/~cs188/sp12/slides/cs188%20lecture%2020%20--%20naive%20bayes%202PP.pdf">Berkeley CS188 Slides on Bayes Theorem</a></li>
+</ul>
 </div>
 <div id="support-vector-machines-svm" class="section level3">
 <h3><span class="header-section-number">7.3.4</span> Support Vector Machines (SVM)</h3>
+<p>Support Vector Machines are used for classification: they try to find a line that separates data in one category from data in another category. However, they provide two big improvements on logistic regression. First, they can fit nonlinear decision boundaries. For example, imagine your data looks like this:</p>
+<div class="figure">
+<img src="img/svm_1.png" />
+
+</div>
+<p>Clearly a diagonal line is not going to fit this data well; it would cut through the middle of both categories. SVM allows the classifier to learn a nonlinear decision boundary by using the “kernel trick,” which maps the data to a higher-dimensional space, then linearly separates the data in this higher-dimensional space. This translates to more complex decision boundaries in the lower-level space.</p>
+<p>SVMs can also improve classification by explicitly trying to maximize the space between the two categories. This space is called the “margin.” In the diagram below, the model found a line C that best maximized the distance between the two categories.</p>
+<div class="figure">
+<img src="img/svm_2.png" />
+
+</div>
 <p>Summary:</p>
 <ul>
 <li>Inputs:</li>
@@ -565,6 +652,9 @@
 </div>
 <div id="generative-adversarial-networks" class="section level3">
 <h3><span class="header-section-number">7.7.2</span> Generative Adversarial Networks</h3>
+<p>Generative adversarial networks (GANs) exploit competition between two neural networks - a generator network and a discriminator network - in order to create data that mimics training examples. While the discriminator network is trained to recognize a particular class of data, such as genuine da Vinci paintings, the generator uses classification feedback from the discriminator to progressively output samples that make the discriminator increasingly ambivalent, or unable to tell between genuine sample data and the generator network’s output.</p>
+<p>GANs were first showcased by OpenAI researcher Ian Goodfellow in the 2014 paper <a href="https://arxiv.org/abs/1406.2661">Generative Adversarial Networks</a>; for those familiar with gradient descent, Goodfellow’s 2014 paper proposed a two-step variation on stochastic gradient descent for training GANs. First, the discriminator network is optimized using a series of batched training examples. Then, the generator is sampled for its current output and optimized based on the output of the discriminator on those samples.</p>
+<p>As a properly trained GAN is able to generate data that appears similar to training data, GANs have received significant media attention for their ability to stylistically mimic artwork or video. In October 2018, Christie’s <a href="https://www.theverge.com/2018/10/23/18013190/ai-art-portrait-auction-christies-belamy-obvious-robbie-barrat-gans">sold a portrait</a> created by a GAN; other GANs have been applied to <a href="https://www.telegraph.co.uk/technology/2018/12/18/ai-can-now-create-100-per-cent-lifelike-human-faces-scratch/">generating human faces</a> and <a href="https://salu133445.github.io/musegan/">creating music</a>.</p>
 <p>Summary:</p>
 <ul>
 <li>Inputs:</li>
@@ -639,6 +729,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

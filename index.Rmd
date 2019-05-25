@@ -1,6 +1,6 @@
 --- 
 title: "The AI Handbook"
-author: "Darren Hau, Andrew Milich, Zach Gleicher, and Jonathan Rosenberg"
+author: "Darren Hau, Andrew Milich, Anna Mitchell, Raya Kuo, Samuel Ching, Zach Gleicher, and Jonathan Rosenberg"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 # output: bookdown::gitbook
