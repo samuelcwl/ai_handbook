@@ -7,6 +7,7 @@
 
 ## Earth, Environment, and Climate Change
 
+- [Tackling Climate Change with Machine Learining (2019, arXiv)](https://arxiv.org/pdf/1906.05433.pdf)
 - [Harnessing Artificial Intelligence for the Earth (2018, World Economic Forum)](http://www3.weforum.org/docs/Harnessing_Artificial_Intelligence_for_the_Earth_report_2018.pdf)
 - [Global Fishing Watch tracks ocean poachers with the help of AI (June 2018, VentureBeat)](https://venturebeat.com/2018/06/08/global-fishing-watch-tracks-ocean-poachers-with-the-help-of-ai/)
 - [AI is helping seismologists detect earthquakes they’d otherwise miss (Feb 2018, Verge)](https://www.theverge.com/2018/2/14/17011396/ai-earthquake-detection-oklahoma-neural-network)
