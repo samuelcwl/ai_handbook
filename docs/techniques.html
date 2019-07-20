@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 7 Techniques | The AI Handbook</title>
-  <meta name="description" content="A handbook for technical and non-technical AI stakeholders.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="A handbook for technical and non-technical AI stakeholders." />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 7 Techniques | The AI Handbook" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   <meta name="twitter:description" content="A handbook for technical and non-technical AI stakeholders." />
   
 
-<meta name="author" content="Darren Hau, Andrew Milich, Anna Mitchell, Raya Kuo, Samuel Ching, Zach Gleicher, and Jonathan Rosenberg">
+<meta name="author" content="Darren Hau, Andrew Milich, Anna Mitchell, Raya Kuo, Samuel Ching, Zach Gleicher, and Jonathan Rosenberg" />
 
 
-<meta name="date" content="2019-05-25">
+<meta name="date" content="2019-07-20" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="themes.html">
@@ -119,7 +118,7 @@
 </ul></li>
 <li class="chapter" data-level="6.4" data-path="themes.html"><a href="themes.html#artificial-general-intelligence-agi"><i class="fa fa-check"></i><b>6.4</b> Artificial General Intelligence (AGI)</a></li>
 <li class="chapter" data-level="6.5" data-path="themes.html"><a href="themes.html#ethics"><i class="fa fa-check"></i><b>6.5</b> Ethics</a><ul>
-<li class="chapter" data-level="6.5.1" data-path="general.html"><a href="general.html#general"><i class="fa fa-check"></i><b>6.5.1</b> General</a></li>
+<li class="chapter" data-level="6.5.1" data-path="themes.html"><a href="themes.html#general-1"><i class="fa fa-check"></i><b>6.5.1</b> General</a></li>
 <li class="chapter" data-level="6.5.2" data-path="themes.html"><a href="themes.html#ai-weapons"><i class="fa fa-check"></i><b>6.5.2</b> AI Weapons</a></li>
 <li class="chapter" data-level="6.5.3" data-path="themes.html"><a href="themes.html#black-box-model-explainability"><i class="fa fa-check"></i><b>6.5.3</b> Black Box &amp; Model Explainability</a></li>
 <li class="chapter" data-level="6.5.4" data-path="themes.html"><a href="themes.html#model-bias"><i class="fa fa-check"></i><b>6.5.4</b> Model Bias</a></li>
@@ -236,16 +235,10 @@
 <div id="linear-regression" class="section level3">
 <h3><span class="header-section-number">7.1.1</span> Linear Regression</h3>
 <p>Linear regression uses a line to approximate the relationship between an independent variable and a dependent variable. The learning task is to find the correct line, given many labeled training examples (points on the graph).</p>
-<div class="figure">
-<img src="img/linear_regression_1.png" />
-
-</div>
+<p><img src="img/linear_regression_1.png" /></p>
 <p>A rudimentary example is predicting a house’s price from its square footage (in practice, models use many more input features; for interpretability we simplify to a single input feature). To train the model, you would feed it training examples labeled with ground truth: e.g. house 1 has 1,500 square feet and sold for $200,000; and house 2 has 3,000 square feet and sold for $500,000. The model’s goal is to learn a pattern from these square footage-housing price pairs. Then in the future, when given only a square footage, it can predict the price accurately.</p>
 <p>The pattern linear regression models learn is a simple line (with more features, this line is multi-dimensional). After the model outputs a line, prediction is easy. To predict a price from any given square footage, find the square footage on the x-axis, move upward to see the y-value of the line at this point, and output this as the predicted price. The diagram below shows this process. Gray points are the training examples; the red line was found by the model to fit these training examples most closely.</p>
-<div class="figure">
-<img src="img/linear_regression_2.png" />
-
-</div>
+<p><img src="img/linear_regression_2.png" /></p>
 <p>More concretely, the model tries to find a line in the form <code>y = Wx + b</code> (where <code>W</code> is the slope and <code>b</code> is the y-intercept) to fit its training data most tightly. Several methods exist for finding this <code>W</code> and <code>b</code>. Least-squares is a popular method, but other options, like ridge regression, are also available.</p>
 <p>Summary:</p>
 <ul>
@@ -316,10 +309,7 @@
 </ul></li>
 </ul>
 <p>If <code>k = 1</code>, then the input object is simply assigned to the class or value of its single nearest neighbor.</p>
-<div class="figure">
-<img src="img/knn.png" />
-
-</div>
+<p><img src="img/knn.png" /></p>
 <p>Summary:</p>
 <ul>
 <li>Inputs:
@@ -422,16 +412,10 @@
 <div id="support-vector-machines-svm" class="section level3">
 <h3><span class="header-section-number">7.3.4</span> Support Vector Machines (SVM)</h3>
 <p>Support Vector Machines are used for classification: they try to find a line that separates data in one category from data in another category. However, they provide two big improvements on logistic regression. First, they can fit nonlinear decision boundaries. For example, imagine your data looks like this:</p>
-<div class="figure">
-<img src="img/svm_1.png" />
-
-</div>
+<p><img src="img/svm_1.png" /></p>
 <p>Clearly a diagonal line is not going to fit this data well; it would cut through the middle of both categories. SVM allows the classifier to learn a nonlinear decision boundary by using the “kernel trick,” which maps the data to a higher-dimensional space, then linearly separates the data in this higher-dimensional space. This translates to more complex decision boundaries in the lower-level space.</p>
 <p>SVMs can also improve classification by explicitly trying to maximize the space between the two categories. This space is called the “margin.” In the diagram below, the model found a line C that best maximized the distance between the two categories.</p>
-<div class="figure">
-<img src="img/svm_2.png" />
-
-</div>
+<p><img src="img/svm_2.png" /></p>
 <p>Summary:</p>
 <ul>
 <li>Inputs:</li>
@@ -472,10 +456,7 @@
 <h2><span class="header-section-number">7.4</span> Neural Networks (Supervised)</h2>
 <div id="convolutional-neural-networks-cnn" class="section level3">
 <h3><span class="header-section-number">7.4.1</span> Convolutional Neural Networks (CNN)</h3>
-<div class="figure">
-<img src="img/convnet.jpg" />
-
-</div>
+<p><img src="img/convnet.jpg" /></p>
 <p>Summary:</p>
 <ul>
 <li>Inputs:</li>
@@ -491,10 +472,7 @@
 <div id="recurrent-neural-networks-rnn" class="section level3">
 <h3><span class="header-section-number">7.4.2</span> Recurrent Neural Networks (RNN)</h3>
 <p>When we process sequence data, like reading a paragraph or listening to music, we often rely on the context of what we’ve processed before to make decisions about the future. A basic neural network doesn’t accomplish this - it can only make decisions based on the current input. Fortunately, recurrent neural networks (RNNs) come to the rescue!</p>
-<div class="figure">
-<img src="img/rnn.png" />
-
-</div>
+<p><img src="img/rnn.png" /></p>
 <p>An RNN is a neural network that generates not only an output, but also a “hidden state” that feeds back into itself. While this may seem complex, we can unroll this network in time to see how the hidden state feeds into the next timestep along with the next timestep’s inputs. This hidden state represents the context of previous inputs, so we aren’t throwing away previous learnings!</p>
 <p>In each timestep, we therefore incorporate the previous timestep’s context (or nothing at the start), along with the current input, to generate an output (i.e. the next word in a sentence translation).</p>
 <p>Summary:</p>
@@ -515,10 +493,7 @@
 <p>“If we are trying to predict the last word in ‘the clouds are in the sky,’ we don’t need any further context – it’s pretty obvious the next word is going to be sky. In such cases, where the gap between the relevant information and the place that it’s needed is small, RNNs can learn to use the past information.”</p>
 <p>On the other hand, “consider trying to predict the last word in the text ‘I grew up in France… I speak fluent French.’ Recent information suggests that the next word is probably the name of a language, but if we want to narrow down which language, we need the context of France, from further back. It’s entirely possible for the gap between the relevant information and the point where it is needed to become very large.”</p>
 <p>Due to a phenomenon known as the vanishing gradient problem (see Advanced Concepts section), an RNN’s capability to learn from information from many timesteps ago quickly diminishes. Fortunately, we have Long Short Term Memory networks (LSTMs) to the rescue!</p>
-<div class="figure">
-<img src="img/lstm.png" />
-
-</div>
+<p><img src="img/lstm.png" /></p>
 <p>Here’s the basic concept of an LSTM:</p>
 <ul>
 <li>Prior information is recorded in a cell state that is passed along at each timestep</li>
@@ -548,10 +523,7 @@
 <div id="k-means" class="section level3">
 <h3><span class="header-section-number">7.5.1</span> K-Means</h3>
 <p>K-means clustering is one of the most common ways to identify groups in your data. You start with unlabeled data (i.e. online customer sales data) and want to identify what clusters they can be bucketed into (i.e. customer archetypes).</p>
-<div class="figure">
-<img src="img/kmeans.gif" />
-
-</div>
+<p><img src="img/kmeans.gif" /></p>
 <p>How does it work? You define an objective function to minimize, initialize the number and location of cluster centroids (randomly or through a heuristic), and keep repeating the following steps until some criteria is met (i.e. 1000 iterations or objective function is sufficiently small):</p>
 <ol style="list-style-type: decimal">
 <li>Update the cluster assignments of each data point
@@ -590,14 +562,22 @@
 <h2><span class="header-section-number">7.6</span> Dimensionality Reduction (Unsupervised)</h2>
 <div id="pca" class="section level3">
 <h3><span class="header-section-number">7.6.1</span> PCA</h3>
-<p>Summary:</p>
+<p>PCA, short for Principal Components Analysis, is a dimensionality reduction technique. All dimensionality reduction techniques seek to transform a large dataset containing many features to a smaller dataset with fewer features while preserving as much information as possible. One analogy is RAW image files versus lossy image files (e.g. JPEG / PNG). The RAW image files contain a lot of information, but requires significant storage space. JPEG images, on the other hand, are much smaller files with little perceptible loss in image quality.</p>
+<p>The motivation behind PCA includes visualizing the relationships between a large number of features, removing linear correlations between features and understanding the internal and underlying structure of a dataset.</p>
+<p>The intuition behind the PCA technique is to find the different orthogonal features which best explains the variance in the data. For each PCA, the input will be the set of original features and the output will be a set of reconstituted features (the principal components).</p>
+<p>Take an individual stock in the stock market for instance. Each stock is described by various features, such as the daily volume traded, its daily returns, the moving averages, the profit margins of the company and so on. As expected, these features are often correlated with each other. When we compare different stocks, there is a whole universe of different features which we could use to compare them. Yet, we know that many of these features are related. PCA helps us to prune the number of features. It constructs new linearly uncorrelated features (from the existing pool of features) which we can use to compare different stocks.</p>
+<p>What then are these <em>principal components</em>? Principal components are orthogonal (linearly uncorrelated) features. The engine under the hood is simply solving for and ranking the eigenvectors with the highest eigenvalues in the dataset. Each principal component will provide a new angle from which to understand the data. This is because the relationships between the values in the dataset will be re-organized based on the new dimensions produced by PCA.</p>
+<p>Since each principal component is composed of a weighting of the original feature set, we can understand which of the original features are linearly correlated to each other. We can also understand which of the original features contribute to the maximal variance in the dataset. For instance, if one feature is strongly represented in the first principal component, we can argue that that particular feature has more explanatory power about the variance in the dataset than the other features.</p>
+<p><strong>Limitations of PCA</strong></p>
 <ul>
-<li>Inputs:</li>
-<li>Outputs:</li>
-<li>Potential pitfalls:</li>
+<li>Sensitivity to the scaling of the variables. For instance, if we use centimeters instead of meters for a feature, that feature will be weighted as contributing more to the principal components than before.</li>
+<li>Limited to linear correlations. PCA is only able to capture linear correlations between features. If there are non-linear correlations between the original features, the reconstituted principal components will not remove these correlations.</li>
 </ul>
-<p>Useful Resources:</p>
+<p><strong>Resources for PCA</strong></p>
 <ul>
+<li><a href="https://towardsdatascience.com/a-step-by-step-explanation-of-principal-component-analysis-b836fb9c97e2">https://towardsdatascience.com/a-step-by-step-explanation-of-principal-component-analysis-b836fb9c97e2</a></li>
+<li><a href="https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues">https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues</a></li>
+<li><a href="https://ourarchive.otago.ac.nz/bitstream/handle/10523/7534/OUCS-2002-12.pdf?sequence=1&amp;isAllowed=y">https://ourarchive.otago.ac.nz/bitstream/handle/10523/7534/OUCS-2002-12.pdf?sequence=1&amp;isAllowed=y</a></li>
 <li><a href="https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b">Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)</a></li>
 </ul>
 </div>
@@ -623,17 +603,14 @@
 <ul>
 <li>Dimensionality reduction or encoding data
 <ul>
-<li>Example: “Visualizing high-dimensional data is challenging. t-SNE is the most commonly used method but struggles with large number of dimensions (typically above 32). So autoencoders are used as a preprocessing step to reduce the dimensionality, and this compressed representation is used by t-SNE to visualize the data in 2D space.”<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+<li>Example: “Visualizing high-dimensional data is challenging. t-SNE is the most commonly used method but struggles with large number of dimensions (typically above 32). So autoencoders are used as a preprocessing step to reduce the dimensionality, and this compressed representation is used by t-SNE to visualize the data in 2D space.”<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></li>
 </ul></li>
 <li>Denoise data
 <ul>
 <li>Example: You have a grainy image but the random pixel values that cause the “graininess” is not useful for classifying what the image is. You can adjust how you use the autoencoder by feeding it the grainy image and having it try to predict the clean image.</li>
 </ul></li>
 </ul>
-<div class="figure">
-<img src="img/autoencoder.png" />
-
-</div>
+<p><img src="img/autoencoder.png" /></p>
 <p>Autoencoders are comprised of two parts - an encoder neural network and a decoder neural network - and the inputs and outputs are the same. When the input is fed through the encoder, it is forced into a smaller, “lossy” representation due to the smaller number of neurons at the end of the encoder network. This compressed representation is then fed through the decoder, which tries to reconstruct the input. During the training process, the autoencoder therefore learns to approximate an identity function, and is forced to extract the most relevant features of the input.</p>
 <p>For the more technical folks, the function of an autoencoder is similar to principal component analysis (PCA).</p>
 <p>Summary:</p>
@@ -672,7 +649,7 @@
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p><a href="https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798" class="uri">https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798</a><a href="techniques.html#fnref1">↩</a></p></li>
+<li id="fn1"><p><a href="https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798" class="uri">https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798</a><a href="techniques.html#fnref1" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 <script src="lib/js/jquery.min.js"></script>
@@ -734,7 +711,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');
