@@ -49,3 +49,42 @@ Useful Resources:
 - [CS 231N: Transfer Learning](http://cs231n.github.io/transfer-learning/)
 
 ## Data Augmentation
+
+
+## AutoML
+
+Currently, a big limiting factor in scaling up the application of machine learning to various domains is the need for a team of specialists to support the end to end ML process. Everything from the ingestion of data, to data pre-processing, to feature engineering and model interpretation, requires individuals who deeply understand the various facets of the pipeline. 
+
+![](img/automl.png)
+
+Automated machine learning (autoML) seeks to abstract away much of the technical processes required for each of these stages. It helps to automate the end to end machine learning pipeline to enable more non-experts to develop and scale effective and robust predictive models.
+
+There are some broad categories of autoML, namely, automated data preparation and ingestion, automated feature engineering and hyperparameter tuning as well as automated model selection. Different autoML providers target different stages of the pipeline. For instance, the open source packages auto-sklearn and ATM (auto-tune models) automate hyperparameter optimization and model selection, while TPOT creates entire end to end pipelines using genetic programming. 
+
+**Limitations**
+
+- While autoML is useful in abstracting away the nitty gritty details of ML implementation, it could potentially exacerbate model complexity. Without model interpretability, there might be a tendency to treat the autoML models as a black box. As a black box, model predictions might be difficult to understand and interpret. While open source autoML packages such as Featuretools has a built in module to explain predictions, many autoML packages still do not.
+- Further, autoML typically works well in supervised learning scenarios where there is a clear measure of success. In unsupervised or reinforcement learning environments, there does not exist an objective function which automated models could optimize for easily.
+- Finally, feature extraction and engineering is still best performed by specialists with embedded knowledge expertise. While autoML tools can infer generic feature types from similarly structured datasets, the best features still come from heuristics based on experience in the field.
+
+**Current AutoML commercial providers**
+
+- [Auger.ai](http://auger.ai)
+- DataRobot
+- Google AutoML
+- Microsoft Azure AutoML
+- OneClick.ai
+
+**Current AutoML open source packages**
+
+- Auto-sklearn
+- Auto-Tune Models
+- Caret
+- H2O
+- TPOT
+
+**Resources**
+
+- [https://www.kdnuggets.com/2019/01/building-ai-to-build-ai-neurips-automl-challenge.html](https://www.kdnuggets.com/2019/01/building-ai-to-build-ai-neurips-automl-challenge.html)
+- [https://www.kdnuggets.com/2019/03/why-automl-wont-replace-data-scientists.html](https://www.kdnuggets.com/2019/03/why-automl-wont-replace-data-scientists.html)
+- [https://heartbeat.fritz.ai/automl-the-next-wave-of-machine-learning-5494baac615f](https://heartbeat.fritz.ai/automl-the-next-wave-of-machine-learning-5494baac615f)
