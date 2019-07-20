@@ -85,6 +85,6 @@ There are some broad categories of autoML, namely, automated data preparation an
 
 **Resources**
 
-- [https://www.kdnuggets.com/2019/01/building-ai-to-build-ai-neurips-automl-challenge.html](https://www.kdnuggets.com/2019/01/building-ai-to-build-ai-neurips-automl-challenge.html)
-- [https://www.kdnuggets.com/2019/03/why-automl-wont-replace-data-scientists.html](https://www.kdnuggets.com/2019/03/why-automl-wont-replace-data-scientists.html)
-- [https://heartbeat.fritz.ai/automl-the-next-wave-of-machine-learning-5494baac615f](https://heartbeat.fritz.ai/automl-the-next-wave-of-machine-learning-5494baac615f)
+- [Building AI to Build AI at NeurIPS (Kdnuggets, January 2019)](https://www.kdnuggets.com/2019/01/building-ai-to-build-ai-neurips-automl-challenge.html)
+- [Why AutoML Won't Replace Data Scientists Yet (Kdnuggets, March 2019)](https://www.kdnuggets.com/2019/03/why-automl-wont-replace-data-scientists.html)
+- [AutoML, the next wave of machine learning](https://heartbeat.fritz.ai/automl-the-next-wave-of-machine-learning-5494baac615f)

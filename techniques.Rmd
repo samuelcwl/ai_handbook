@@ -357,9 +357,9 @@ Since each principal component is composed of a weighting of the original featur
 
 **Resources for PCA**
 
-- [https://towardsdatascience.com/a-step-by-step-explanation-of-principal-component-analysis-b836fb9c97e2](https://towardsdatascience.com/a-step-by-step-explanation-of-principal-component-analysis-b836fb9c97e2)
-- [https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues](https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues)
-- [https://ourarchive.otago.ac.nz/bitstream/handle/10523/7534/OUCS-2002-12.pdf?sequence=1&isAllowed=y](https://ourarchive.otago.ac.nz/bitstream/handle/10523/7534/OUCS-2002-12.pdf?sequence=1&isAllowed=y)
+- [A step by step explanation of Principal Component Analysis, February 2019](https://towardsdatascience.com/a-step-by-step-explanation-of-principal-component-analysis-b836fb9c97e2)
+- [Making sense of Principal Component Analysis](https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues)
+- [A tutorial on Principal Components Analysis, University of Otago](https://ourarchive.otago.ac.nz/bitstream/handle/10523/7534/OUCS-2002-12.pdf?sequence=1&isAllowed=y)
 - [Visualising high-dimensional datasets using PCA and t-SNE in Python (October 2016, Medium)](https://medium.com/@luckylwk/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)
 
 ### t-SNE
@@ -420,7 +420,7 @@ Summary:
 
 Useful Resources:
 
-## (Reinforcement Learning)
+## Reinforcement Learning
 
 Reinforcement learning (RL) is a "type of machine learning technique that enables an agent to learn in an interactive environment by trial and error using feedback from its own actions and experiences" (KDNuggets). 
 
@@ -454,7 +454,7 @@ In sum, as Google Brain Engineer Alex Irpan puts it: "Whenever someone asks me i
 
 **Useful Resources**
 
-- [Deep Reinforcement Learning Doesn't Work Yet](https://www.alexirpan.com/2018/02/14/rl-hard.html)]
-- [Spinning Up: OpenAI DeepRL Introduction](https://spinningup.openai.com/en/latest/)]
-- [Skymind's Deep RL Wiki](https://skymind.ai/wiki/deep-reinforcement-learning)]
-- [5 Things You Need to Know about Reinforcement Learning](https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html)]
+- [Deep Reinforcement Learning Doesn't Work Yet](https://www.alexirpan.com/2018/02/14/rl-hard.html)
+- [Spinning Up: OpenAI DeepRL Introduction](https://spinningup.openai.com/en/latest/)
+- [Skymind's Deep RL Wiki](https://skymind.ai/wiki/deep-reinforcement-learning)
+- [5 Things You Need to Know about Reinforcement Learning](https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html)
