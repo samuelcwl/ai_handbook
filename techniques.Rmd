@@ -454,7 +454,7 @@ In sum, as Google Brain Engineer Alex Irpan puts it: "Whenever someone asks me i
 
 **Useful Resources**
 
-- (Deep Reinforcement Learning Doesn't Work Yet)[[https://www.alexirpan.com/2018/02/14/rl-hard.html](https://www.alexirpan.com/2018/02/14/rl-hard.html)]
-- (Spinning Up: OpenAI DeepRL Introduction)[[https://spinningup.openai.com/en/latest/](https://spinningup.openai.com/en/latest/)]
-- (Skymind's Deep RL Wiki)[[https://skymind.ai/wiki/deep-reinforcement-learning](https://skymind.ai/wiki/deep-reinforcement-learning)]
-- (5 Things You Need to Know about Reinforcement Learning)[[https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html](https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html)]
+- [Deep Reinforcement Learning Doesn't Work Yet](https://www.alexirpan.com/2018/02/14/rl-hard.html)]
+- [Spinning Up: OpenAI DeepRL Introduction](https://spinningup.openai.com/en/latest/)]
+- [Skymind's Deep RL Wiki](https://skymind.ai/wiki/deep-reinforcement-learning)]
+- [5 Things You Need to Know about Reinforcement Learning](https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html)]
