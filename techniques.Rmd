@@ -420,4 +420,41 @@ Summary:
 
 Useful Resources:
 
-## ??? (Reinforcement Learning)
+## (Reinforcement Learning)
+
+Reinforcement learning (RL) is a "type of machine learning technique that enables an agent to learn in an interactive environment by trial and error using feedback from its own actions and experiences" (KDNuggets). 
+
+The most intuitive way to understand RL is to think about a child and how they learn to adapt to the world around them. When a child is a toddler and still unable to talk, they take actions in the world which provide a stream of feedback signals to them. Each feedback signal provides the child with some information about the world around them as well as an indication of whether they should continue to taking that action or not. For example, if the toddler is hungry, they will cry (action) and they will get some food (feedback signal). If the toddler touches hot stove (action), they will scald themselves (feedback signal) and learn eventually not to do that. As they interact more with the environment around them, their behavior will be *reinforced* or *punished*. This is the basis of the reinforcement learning model.
+
+RL differs from the above supervised and unsupervised methods of machine learning. Unlike supervised learning, RL does not have a static training set of correct examples to learn from. Instead, RL agents receive signals from the environment which reward and punish negative behavior. Unlike fixed supervised learning training sets, the RL environment is often stochastic and non-deterministic in nature, much like the real world. 
+
+Unlike unsupervised learning, RL does not seek to find similarities or differences or other patterns in the data. Instead, RL agents respond to the reward signals given from the environment and seek to maximize their total cumulative reward by the end of each episode.
+
+The basic RL model is as follows:
+
+![](img/rlworld.png)
+
+In a simplified RL world, the *input* will contain an agent and an environment. The environment is the world in which the RL agent operates in. At each time point, the environment will provide a particular *state* to the agent. This state describes the world in which the agent is in at that particular time point. The agent will then use a *policy* to decide which *action* to take in the environment. These actions will elicit a *reward* from the environment. This reward will then allow the agent to update its policy to modify the future actions that it will take.
+
+![](img/rlmario.gif)
+
+For instance, in the gif above, Mario is receiving both direct reward (from its current action) as well as the estimated future reward, calculated using the current policy that it is following. If Mario touches an enemy, he'll die. This will update the direct reward, as well as the policy for future runs.
+
+Historically, the field of RL developed out of the nexus of control theory, optimization and machine learning. As a result, many of its applications have been in the field of robotics (such as autonomous flight control). The current focus of RL research, however, has been focused on games such as classical board games like Chess and Go, as well as computer games from the simple such as Sonic the Hedgehog to more complex ones such as StarCraft 2 and DOTA 2. 
+
+The main reason behind using games to build and develop RL algorithms is due to two main factors: 
+
+1. Being able to generate unlimited amounts of experience. Spinning up instances of new games is relatively trivial and can be parallelized on multiple machines. In many real life problems, it is difficult to construct an artificial world.
+
+2. Being able to shape a dense and well-defined reward function. In many games, creating a well-defined reward function is relatively easier to do. For instance, in Atari games, the speed at which a level is finished, coupled with not dying during the game, is a well-defined reward function. Further, games provide dense reward functions as the action-reward delay in an environment is small and consequently, providing a tight feedback loop. In many real-life scenarios, it is difficult to create a reward function which is both dense and well-defined. A sub-optimal reward function will lead to the RL agent optimizing for the wrong objective.
+
+No doubt, RL has been instrumental in breakthroughs in playing [classical](https://deepmind.com/research/alphago/) [games](https://deepmind.com/blog/alphazero-shedding-new-light-grand-games-chess-shogi-and-go/), more complex [computer](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii/) [games](https://openai.com/five/), optimizing [data center efficiency](https://deepmind.com/applied/deepmind-google/) and [protein folding](https://deepmind.com/blog/alphafold/), generalizing RL to other use-cases remains a non-trivial problem. Sample inefficiency, definition of reward functions and difficulty of consistent reproduction all currently plague RL solutions. 
+
+In sum, as Google Brain Engineer Alex Irpan puts it: "Whenever someone asks me if reinforcement learning can solve their problem, I tell them it can’t. I think this is right at least 70% of the time." While there has been great interest in the RL paradigm, the real world use cases are currently limited and often require very specialized domain knowledge to accurately construct the environment and shape the rewards. As a result, it is often easier to apply and optimize shallow models (such as the ones elaborated on above) initially.
+
+**Useful Resources**
+
+- (Deep Reinforcement Learning Doesn't Work Yet)[[https://www.alexirpan.com/2018/02/14/rl-hard.html](https://www.alexirpan.com/2018/02/14/rl-hard.html)]
+- (Spinning Up: OpenAI DeepRL Introduction)[[https://spinningup.openai.com/en/latest/](https://spinningup.openai.com/en/latest/)]
+- (Skymind's Deep RL Wiki)[[https://skymind.ai/wiki/deep-reinforcement-learning](https://skymind.ai/wiki/deep-reinforcement-learning)]
+- (5 Things You Need to Know about Reinforcement Learning)[[https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html](https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html)]
